@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.infyULabs">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".GlobalClass"
+        tools:replace="allowBackup"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".nir.NirConnection"></activity>
+        <activity
+            android:name=".RiceData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nir.NewScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.example.infyULabs.service.NanoBLEService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".nir.ScanActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>
+
+        <activity
+            android:name=".userProfile.ForgetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userProfile.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/edittextstyle" />
+
+        <activity
+            android:name=".Connection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseTheData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Addtoreport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Logs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.SettingOfApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Trend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".userProfile.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".second"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dataAnalysis.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_view_size">14sp</dimen>
+    <dimen name="text_Title_size">20sp</dimen>
+    <dimen name="card_icons_height">30dp</dimen>
+    <dimen name="card_icons_width">30dp</dimen>
+    <dimen name="_icons_height">40dp</dimen>
+    <dimen name="info_height">200dp</dimen>
+    <dimen name="task_id">8sp</dimen>
+    <dimen name="created_time">8sp</dimen>
+    <dimen name="text_type_size">12sp</dimen>
+    <dimen name="task_title_size">16sp</dimen>
+    <dimen name="circle_width">28dp</dimen>
+    <dimen name="circle_height">28dp</dimen>
+    <dimen name="circle_height_icon">20dp</dimen>
+    <dimen name="rejection_view_size">16sp</dimen>
+    <dimen name="profile_view_size">18sp</dimen>
+    <dimen name="about_content_size">13sp</dimen>
+
+    <dimen name="dip8">8dp</dimen>
+    <dimen name="dip16">16dp</dimen>
+    <dimen name="dip32">32dp</dimen>
+    <dimen name="dip40">40dp</dimen>
+    <dimen name="dip48">48dp</dimen>
+    <dimen name="dip96">96dp</dimen>
+
+    <dimen name="px1">1px</dimen>
+
+</resources>

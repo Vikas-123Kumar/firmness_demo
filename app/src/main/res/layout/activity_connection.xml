@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connection">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#fff">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back_black_36dp">
+
+
+            <TableRow
+                android:id="@+id/Relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="7dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.75" />
+
+                <ImageView
+                    android:id="@+id/setting_action"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight=".2"
+                    android:background="@drawable/small_logo"
+                    android:padding="5dp">
+
+                </ImageView>
+            </TableRow>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/connection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/app_bar"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/small_logo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/measurement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/connection"
+                android:layout_marginTop="60dp">
+
+                <LinearLayout
+                    android:id="@+id/uv_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/mode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:text="Uv-vis measerment"
+                        android:textSize="17sp">
+
+                    </TextView>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/uv_vis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.40"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:textOff="off"
+                        android:textOn="on"
+                        android:thumb="@drawable/show_swich"
+                        app:track="@drawable/swich_tract"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/uv_switch"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/NIR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        android:text="NIR measurement"
+                        android:textSize="17sp">
+
+                    </TextView>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/nir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/mode"
+                        android:layout_weight="0.4"
+                        android:gravity="center"
+                        android:textOff="off"
+                        android:textOn="on"
+                        android:thumb="@drawable/show_swich"
+                        app:track="@drawable/swich_tract" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

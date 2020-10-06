@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MPChartLibNIR/MPChartLibNIR.iml" filepath="$PROJECT_DIR$/MPChartLibNIR/MPChartLibNIR.iml" group="infyU Labs/MPChartLibNIR" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="infyU Labs/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infyU_Labs.iml" filepath="$PROJECT_DIR$/.idea/modules/infyU_Labs.iml" group="infyU_Labs" />
+    </modules>
+  </component>
+</project>

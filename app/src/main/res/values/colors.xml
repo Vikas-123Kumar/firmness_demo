@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#513483</color>
+    <color name="colorPrimaryDark">#3B2561</color>
+    <color name="colorAccent">#2762AA</color>
+
+    <color name="window_background">#FCFCFC</color>
+    <color name="activity_background">#efefef</color>
+
+    <color name="my_app_trans">#D9513483</color>
+    <color name="flat_pressed">#CC999999</color>
+
+    <color name="heading_text">#3B2561</color>
+
+    <color name="sub_heading_text">#552929</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="video_courses_card">#513483</color>
+    <color name="video_mock_card">#1979C5</color>
+    <color name="free_courses">#C0A03E</color>
+    <color name="study_material">#8FCA4E</color>
+    <color name="current_affairs_video">#DF4439</color>
+    <color name="current_affairs_quiz">#3890D6</color>
+
+    <color name="my_primary">#00aeef</color>
+    <color name="my_primary_trans">#E629B6F6</color>
+
+    <color name="color_perm_granted">#53b368</color>
+    <color name="color_perm_denied">#be5454</color>
+    <color name="perm_button_text">#fcfcfc</color>
+    <color name="perm_text">#ecebeb</color>
+
+    <color name="answer_option_row_back_checked">#00ffffff</color>
+    <color name="answer_option_row_back">#00ffffff</color>
+
+    <color name="pie_text">#E6E6E6</color>
+
+    <color name="color_Absent">#ff5e66</color>
+    <color name="color_Vacant">#f9d555</color>
+    <color name="color_Week_Off">#3f67f9</color>
+    <color name="color_Leave">#7f1d8e</color>
+    <color name="color_Present">#198e6b</color>
+
+
+    <color name="gray_dark">#767676</color>
+
+    <color name="complete">#329945</color>
+    <color name="incomplete">#ab534e</color>
+
+
+    <color name="colorRecieveText">#00FF00</color>
+    <color name="colorSendText">#82CAFF</color>
+    <color name="colorStatusText">#FFDB58</color>
+
+    <!-- Question look and feels -->
+
+    <color name="question_text">#767676</color>
+
+
+    <color name="edittext">#767676</color>
+    <color name="edittext_hint">#afafaf</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+
+    <!-- Browser -->
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#808080</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Orange">#FFA500</color>
+    <color name="Red">#FF0000</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="Teal">#008080</color>
+    <color name="Green">#008000</color>
+    <color name="Black">#000000</color>
+    <color name="Complete">#7CFC00</color>
+</resources>

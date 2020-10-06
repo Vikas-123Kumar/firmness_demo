@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userProfile.Signup">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#fff">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back_black_36dp">
+
+
+            <TableRow
+                android:id="@+id/Relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/small_logo" />
+
+                <Button
+                    android:id="@+id/setting_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="7dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/ic_settings_black_36dp">
+
+                </Button>
+            </TableRow>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6e5773"
+
+        android:layout_below="@id/app_bar">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/connection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_bar"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/connection"
+                android:layout_marginTop="20dp">
+
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/ic_crop_7_5_black_24dp"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:hint="Username"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/pass_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/user">
+
+
+                    <EditText
+                        android:id="@+id/pass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_crop_7_5_black_24dp"
+                        android:drawableLeft="@drawable/ic_https_black_24dp"
+                        android:hint="Password"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        android:textSize="15sp">
+
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/show_hide_icon_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/hide_password">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/show_hide_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pass_layout">
+
+
+                    <EditText
+                        android:id="@+id/confirmpass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_crop_7_5_black_24dp"
+                        android:drawableLeft="@drawable/ic_https_black_24dp"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="15sp">
+
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/show_hide_icon_confirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/hide_password" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/show_hide_confirm_pass"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/ic_crop_7_5_black_24dp"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:hint="Mobile No."
+                    android:drawablePadding="10dp"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="15sp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dp"
+                    android:layout_below="@+id/mobile"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/ic_crop_7_5_black_24dp"
+                    android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                    android:hint="E-mail"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000"
+                    android:textSize="15sp">
+
+                </EditText>
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ic_crop_7_5_black_24dp"
+                    android:text="Register">
+
+                </Button>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

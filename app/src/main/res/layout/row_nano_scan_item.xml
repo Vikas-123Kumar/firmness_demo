@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dip8"
+    android:paddingLeft="@dimen/dip8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip8">
+
+        <TextView
+            android:id="@+id/tv_rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:text="-99"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tv_nano_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/tv_rssi"
+            tools:text="NIRScan Nano"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_rssi" />
+
+        <TextView
+            android:id="@+id/tv_nano_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tv_nano_name"
+            android:layout_toStartOf="@id/tv_rssi"
+            tools:text="11:22:33:44:55:66"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/tv_rssi" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

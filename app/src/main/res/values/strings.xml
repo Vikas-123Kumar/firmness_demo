@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name" translatable="false">InfyU Labs</string>
+    <string name="my_device" translatable="false"><u>My Device</u></string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string-array name="graph_tab_index">
+        <item>Reflectance</item>
+        <item>Absorbance</item>
+        <item>Intensity</item>
+    </string-array>
+
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="menu_support" translatable="false">Support</string>
+    <string name="menu_logs" translatable="false">Logout</string>
+    <string name="menu_trends_analysis" translatable="false">Trends Analysis</string>
+    <string name="menu_setting" translatable="false">Setting</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_profile" translatable="false">Profile</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string>
+    <string name="devices">Bluetooth Devices</string>
+    <string name="scan" translatable="false">Scan</string>
+    <string name="add_to_report" translatable="false">Add To Report</string>
+    <string name="report" translatable="false">Connection</string>
+    <string name="connected" translatable="false">Not Connected</string>
+    <string name="notification_activity">playVideo</string>
+    <string name="select_nano">Select Nano</string>
+    <string name="nano_confirmation_title">Are You Sure?</string>
+    <string name="nano_confirmation_msg">Are you sure you want set the Nano with MAC address: %1$s, as your primary device?</string>
+    <string name="nano_forget_msg">Are you sure you want clear the Nano with MAC address: %1$s, as your primary device?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="nano_disconnected">"Nano Disconnected!"</string>
+    <string name="scanning">Scanning…</string>
+    <string name="scan_nir">Scan</string>
+    <string name="not_connected_title">Not Connected</string>
+    <string name="not_connected_message">Ensure Bluetooth is powered on your Android device and your Nano, then tap the Scan button on the main view.</string>
+    <string name="dl_ref_cal">Downloading Ref Cal</string>
+    <string name="dl_cal_matrix">Downloading Cal Matrix</string>
+    <string name="newScan">NewScan</string>
+    <string name="new_scan">New Scan</string>
+    <string name="prefix">Filename Prefix</string>
+    <string name="data">Data</string>
+    <string name="nano">Nano</string>
+    <string name="save_to_sd">Save to SD Card?</string>
+    <string name="save_to_android">Save to Android Device?</string>
+    <string name="cont_scan">Continuous Scan?</string>
+    <string name="scan_conf">Scan Configuration</string>
+    <string name="col_1">Column 1</string>
+    <string name="hadamard">Hadamard</string>
+    <string name="temperature">Temperature</string>
+    <string name="spatial_freq">Spatial Freq</string>
+    <string name="set_nano">Set My Nano</string>
+    <string name="clear_nano">Clear My Nano</string>
+    <string name="go">Go!</string>
+    <string name="version">v%1$s (%2$d)</string>
+    <string name="forget">Forget</string>
+    <string name="reflectance">Reflectance</string>
+    <string name="intensity">Intensity</string>
+    <string name="absorbance">Absorbance</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_scan"
+        android:icon="@drawable/scan"
+        android:title="@string/scan" />
+    <item
+        android:id="@+id/navigation_add_to_report"
+        android:icon="@drawable/ic_add_circle_black_36dp"
+        android:title="@string/add_to_report" />
+
+    <item
+        android:id="@+id/connection_device"
+        android:icon="@drawable/infi_symbol"
+        android:title="@string/report"
+
+
+        />
+
+
+</menu>
