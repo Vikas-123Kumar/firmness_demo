@@ -160,9 +160,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ll_continuous"
                     android:layout_margin="10dp"
-                    android:gravity="center"
                     android:textColor="@color/Black"
-                    android:textSize="20sp">
+                    android:textSize="18sp">
 
                 </TextView>
 

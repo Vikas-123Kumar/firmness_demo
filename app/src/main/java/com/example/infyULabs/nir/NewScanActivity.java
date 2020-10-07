@@ -861,7 +861,7 @@ public class NewScanActivity extends AppCompatActivity {
         JSONObject jsonObject = new JSONObject();
         Log.e("token", token);
         try {
-            jsonObject.put("reading", receivedData.trim());
+            jsonObject.put("spectrum", receivedData.trim());
 //            jsonObject.put("name", fruitName.toLowerCase());
 //            jsonObject.put("token", token);
             Log.e("json", jsonObject + "");
@@ -878,7 +878,7 @@ public class NewScanActivity extends AppCompatActivity {
                                 String firmness = response.optString("firmness");
                                 String waterCore = response.optString("watercore");
                                 String starch = response.optString("starch");
-                                brixData.setText("Brix : " + Brix + "\n\npH : " + acidity + "\n\nFirmness Level : " + firmness_level
+                                brixData.setText("Brix : " + Brix + "\n\npH   : " + acidity + "\n\nRipeness Level : " + firmness_level
                                         + "\n\nFirmness : " + firmness + "\n\nStarch : " + starch
                                         + "\n\nWatercore : " + waterCore);
                             } catch (Exception e) {
@@ -889,7 +889,7 @@ public class NewScanActivity extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError volleyError) {
                     Log.e("error", volleyError.toString());
-
+                    Toast.makeText(getApplicationContext(), "Failed to connect", Toast.LENGTH_LONG).show();
                 }
             });
             rQueue = Volley.newRequestQueue(NewScanActivity.this);
@@ -1138,7 +1138,6 @@ public class NewScanActivity extends AppCompatActivity {
                 barProgressDialog.setCancelable(false);
                 barProgressDialog.show();
             } else {
-                Log.e("data cresh", "not cresh");
                 barProgressDialog.setProgress(barProgressDialog.getProgress() + intent.getIntExtra(KSTNanoSDK.EXTRA_REF_CAL_COEFF_SIZE, 0));
             }
         }
