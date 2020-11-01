@@ -64,6 +64,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        context = this;
         etUsername = (EditText) findViewById(R.id.username);
         etPassword = (EditText) findViewById(R.id.password);
         SM = getSharedPreferences("userrecord", 0);
@@ -82,6 +83,7 @@ public class LoginActivity extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(context, ChooseTheData.class));
                 if (validateInputs() && isConnected()) {
                     login();
 //                    Log.e("name", username + "pass" + password);

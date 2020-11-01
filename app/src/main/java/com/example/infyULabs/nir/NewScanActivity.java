@@ -40,6 +40,7 @@ import android.widget.ToggleButton;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
@@ -850,9 +851,7 @@ public class NewScanActivity extends AppCompatActivity {
         }
         Log.e("list", list + "");
         String absorbance = String.join(" ", list);
-        ;
         dataToServer(absorbance);
-
     }
 
     public void dataToServer(String receivedData) {
@@ -867,19 +866,19 @@ public class NewScanActivity extends AppCompatActivity {
             Log.e("json", jsonObject + "");
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, API_URL.nir_url, jsonObject,
                     new Response.Listener<JSONObject>() {
-
                         @Override
                         public void onResponse(JSONObject response) {
                             Log.e("response", response + "");
                             try {
                                 String Brix = response.optString("brix");
                                 String acidity = response.optString("ph");
-                                String firmness_level = response.optString("firmness_level");
                                 String firmness = response.optString("firmness");
+                                String firmness_71 = response.optString("firmness_71");
+                                String firmness_91 = response.optString("firmness_91");
                                 String waterCore = response.optString("watercore");
                                 String starch = response.optString("starch");
-                                brixData.setText("Brix : " + Brix + "\n\npH   : " + acidity + "\n\nRipeness Level : " + firmness_level
-                                        + "\n\nFirmness : " + firmness + "\n\nStarch : " + starch
+                                brixData.setText("Brix : " + Brix + "\n\npH   : " + acidity
+                                        + "\n\nFirmness : " + firmness + "\n\nFirmness 71 : " + firmness_71 + "\n\nFirmness 91 : " + firmness_91 + "\n\nStarch : " + starch
                                         + "\n\nWatercore : " + waterCore);
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -890,6 +889,20 @@ public class NewScanActivity extends AppCompatActivity {
                 public void onErrorResponse(VolleyError volleyError) {
                     Log.e("error", volleyError.toString());
                     Toast.makeText(getApplicationContext(), "Failed to connect", Toast.LENGTH_LONG).show();
+                }
+            });
+            jsonObjectRequest.setRetryPolicy(new RetryPolicy() {
+                @Override
+                public int getCurrentTimeout() {
+                    return 50000;
+                }
+                @Override
+                public int getCurrentRetryCount() {
+                    return 50000;
+                }
+                @Override
+                public void retry(VolleyError error) throws VolleyError {
+
                 }
             });
             rQueue = Volley.newRequestQueue(NewScanActivity.this);
@@ -938,10 +951,8 @@ public class NewScanActivity extends AppCompatActivity {
 
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder service) {
-
             //Get a reference to the service from the service connection
             mNanoBLEService = ((NanoBLEService.LocalBinder) service).getService();
-
             //initialize bluetooth, if BLE is not available, then finish
             if (!mNanoBLEService.initialize()) {
                 finish();
