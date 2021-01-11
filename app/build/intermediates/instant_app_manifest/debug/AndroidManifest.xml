@@ -37,6 +37,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.infyULabs.TriadSpectrometer" />
         <activity android:name="com.example.infyULabs.nir.NirConnection" />
         <activity
             android:name="com.example.infyULabs.RiceData"
@@ -62,8 +63,7 @@
 
         <activity
             android:name="com.example.infyULabs.nir.ScanActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.infyULabs.userProfile.ForgetPassword"
             android:screenOrientation="portrait" />
@@ -116,6 +116,11 @@
             android:name="com.example.infyULabs.dataAnalysis.MainActivity"
             android:screenOrientation="portrait" />
         <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
+
+        <service
+            android:name="com.ISCSDK.ISCNIRScanSDK"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

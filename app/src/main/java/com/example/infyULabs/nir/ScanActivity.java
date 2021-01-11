@@ -44,7 +44,7 @@ public class ScanActivity extends AppCompatActivity {
     private Handler mHandler;
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothLeScanner mBluetoothLeScanner;
-    private static final String DEVICE_NAME = "NIRScanNano";
+    private static final String DEVICE_NAME = "NIR";
     private ArrayList<KSTNanoSDK.NanoDevice> nanoDeviceList = new ArrayList<>();
     private NanoScanAdapter nanoScanAdapter;
     private static Context mContext;

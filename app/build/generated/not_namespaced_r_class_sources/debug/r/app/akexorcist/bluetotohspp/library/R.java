@@ -18,13 +18,13 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int button_scan = 0x7f090056;
-        public static final int list_devices = 0x7f0900af;
+        public static final int button_scan = 0x7f090057;
+        public static final int list_devices = 0x7f0900b0;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int device_list = 0x7f0c0042;
-        public static final int device_name = 0x7f0c0045;
+        public static final int device_list = 0x7f0c0043;
+        public static final int device_name = 0x7f0c0046;
     }
 }

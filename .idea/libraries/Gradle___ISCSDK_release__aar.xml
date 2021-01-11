@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :ISCSDK-release:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -308,14 +308,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (socket.isConnected()) {
                 try {
                     outputStream = socket.getOutputStream();
-                    Log.e("device  after connected", "" + socket);
+                    Log.e("device  after connected", "" + socket.isConnected());
                 } catch (IOException e) {
+                    Log.e("exception1",e.getMessage());
+
                     e.printStackTrace();
                 }
                 try {
                     inputStream = socket.getInputStream();
                 } catch (IOException e) {
                     e.printStackTrace();
+                    Log.e("exception2",e.getMessage());
+
                 }
                 outputStream.write(string.getBytes());
                 beginListenForData();
@@ -392,7 +396,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 switchForGraph = true;
                 while (!Thread.currentThread().isInterrupted() && !stopThread) {
                     try {
+                        Log.e("scan","1");
                         int byteCount = inputStream.read(buffer);
+                        Log.e("scan","11");
+
                         String string = new String(buffer, 0, byteCount, "UTF-8");
                         Log.e("byte", byteCount + "");
                         wordData += string;
@@ -404,13 +411,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 word += string.replace("\n", "");
                                 dataForChart = word;
 //                                openUrlForYData(word);
-                                dataToServer(word);
+//                                dataToServer(word);
                                 dataNo++;
                                 Log.e("word in contain", word + " length" + word.split(" ").length);
                                 word = "";
                             } else if (string.startsWith("\n")) {
 //                                openUrlForYData(word);
-                                dataToServer(word);
+//                                dataToServer(word);
                                 dataNo++;
                                 dataForChart = word;
                                 Log.e("word in start", word + " length" + word.split(" ").length);
@@ -424,7 +431,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 Log.e("word length", word.length() + "");
                                 dataForChart = word;
 //                                openUrlForYData(word);
-                                dataToServer(word);
+//                                dataToServer(word);
                                 Log.e("left string", word + " length" + word.split(" ").length);
                                 word = leftRightStrings[1];
                                 Log.e("right string", word + " length" + word.split(" ").length);
@@ -476,6 +483,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                         }
                     } catch (IOException ex) {
+                        Log.e("exception",ex.getMessage());
+
                         stopThread = true;
                     }
 

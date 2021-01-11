@@ -41,7 +41,7 @@ import java.util.Set;
 import java.util.UUID;
 
 public class Connection extends AppCompatActivity {
-    private SwitchCompat uv_vis, nir;
+    private SwitchCompat uv_vis, nir, triad;
     private Context context = this;
     String intent_data;
 
@@ -51,6 +51,7 @@ public class Connection extends AppCompatActivity {
         setContentView(R.layout.activity_connection);
         uv_vis = (SwitchCompat) findViewById(R.id.uv_vis);
         nir = (SwitchCompat) findViewById(R.id.nir);
+        triad = (SwitchCompat) findViewById(R.id.triad_switch);
         intent_data = getIntent().getStringExtra("item");
         final GlobalClass globalClass = (GlobalClass) getApplicationContext();
         uv_vis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -72,6 +73,15 @@ public class Connection extends AppCompatActivity {
                 }
             }
         });
+        triad.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (triad.isChecked()) {
+                    startActivity(new Intent(getApplicationContext(), TriadSpectrometer.class).putExtra("item", intent_data));
+                    GlobalClass.showToast("TriadSpectrometer nano selected");
+                }
+            }
+        });
         setupToolbar();
     }
 
@@ -80,6 +90,7 @@ public class Connection extends AppCompatActivity {
         super.onRestart();
         uv_vis.setChecked(false);
         nir.setChecked(false);
+        triad.setChecked(false);
     }
 
     private void setupToolbar() {

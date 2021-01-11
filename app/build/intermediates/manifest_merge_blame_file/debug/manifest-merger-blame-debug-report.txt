@@ -6,222 +6,233 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml
+8-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml
+9-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.BLUETOOTH" />
-11-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:6:5-68
-11-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:6:22-65
+11-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:6:5-68
+11-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:6:22-65
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:7:5-79
-12-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:7:22-76
+12-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:7:5-79
+12-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:8:5-67
-13-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:8:22-64
+13-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:8:5-67
+13-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:8:22-64
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:9:5-79
-14-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:9:22-76
+14-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:9:5-79
+14-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:9:22-76
 15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:10:5-81
-15-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:10:22-78
+15-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:10:5-81
+15-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:10:22-78
 16
 17    <uses-feature
-17-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:12:5-14:35
+17-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:12:5-14:35
 18        android:name="android.hardware.bluetooth_le"
-18-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:13:9-53
+18-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:13:9-53
 19        android:required="true" />
-19-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:14:9-32
+19-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:14:9-32
 20
 21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-21-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:16:5-80
-21-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:16:22-77
+21-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:16:5-80
+21-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:16:22-77
 22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-22-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:17:5-81
-22-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:17:22-78
+22-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:17:5-81
+22-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:17:22-78
 23    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 23-->[:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:12:5-74
 23-->[:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:12:22-71
 24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 25
 26    <application
-26-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:19:5-109:19
+26-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:19:5-108:19
 27        android:name="com.example.infyULabs.GlobalClass"
-27-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:20:9-36
+27-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:20:9-36
 28        android:allowBackup="true"
-28-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:22:9-35
+28-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:21:9-35
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 29-->[androidx.core:core:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/2d4ddccafaffb421fd7007b55d21d40f/core-1.1.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:23:9-43
+31-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:22:9-43
 32        android:label="@string/app_name"
-32-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:24:9-41
+32-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:23:9-41
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:25:9-54
+33-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:24:9-54
 34        android:screenOrientation="portrait"
-34-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:26:9-45
+34-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:25:9-45
 35        android:supportsRtl="true"
-35-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:27:9-35
+35-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:26:9-35
 36        android:testOnly="true"
 37        android:theme="@style/AppTheme"
-37-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:28:9-40
+37-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:27:9-40
 38        android:usesCleartextTraffic="true" >
-38-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:29:9-44
-39        <activity android:name="com.example.infyULabs.nir.NirConnection" />
-39-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:30:9-64
-39-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:30:19-52
-40        <activity
-40-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:31:9-33:52
-41            android:name="com.example.infyULabs.RiceData"
-41-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:32:13-37
-42            android:screenOrientation="portrait" />
-42-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:33:13-49
-43        <activity
-43-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:34:9-42:20
-44            android:name="com.example.infyULabs.SplashScreen"
-44-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:35:13-41
-45            android:screenOrientation="portrait" >
-45-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:36:13-49
-46            <intent-filter>
-46-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:37:13-41:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:38:17-69
-47-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:38:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:40:17-77
-49-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:40:27-74
-50            </intent-filter>
-51        </activity>
-52        <activity
-52-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:43:9-46:55
-53            android:name="com.example.infyULabs.nir.NewScanActivity"
-53-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:44:13-48
-54            android:screenOrientation="portrait"
-54-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:45:13-49
-55            android:windowSoftInputMode="adjustPan" />
-55-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:46:13-52
-56
-57        <service
-57-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:48:9-51:39
-58            android:name="com.example.infyULabs.service.NanoBLEService"
-58-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:49:13-72
-59            android:enabled="true"
-59-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:50:13-35
-60            android:exported="true" />
-60-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:51:13-36
-61
-62        <activity
-62-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:53:9-56:20
-63            android:name="com.example.infyULabs.nir.ScanActivity"
-63-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:53:19-51
-64            android:screenOrientation="portrait" >
-64-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:54:13-49
-65        </activity>
+38-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:28:9-44
+39        <activity android:name="com.example.infyULabs.TriadSpectrometer" />
+39-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:30:9-64
+39-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:30:19-52
+40        <activity android:name="com.example.infyULabs.nir.NirConnection" />
+40-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:31:9-55
+40-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:31:19-52
+41        <activity
+41-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:32:9-34:52
+42            android:name="com.example.infyULabs.RiceData"
+42-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:33:13-37
+43            android:screenOrientation="portrait" />
+43-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:34:13-49
+44        <activity
+44-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:35:9-43:20
+45            android:name="com.example.infyULabs.SplashScreen"
+45-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:36:13-41
+46            android:screenOrientation="portrait" >
+46-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:37:13-49
+47            <intent-filter>
+47-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:38:13-42:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:39:17-69
+48-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:39:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:41:17-77
+50-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:41:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:44:9-47:55
+54            android:name="com.example.infyULabs.nir.NewScanActivity"
+54-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:45:13-48
+55            android:screenOrientation="portrait"
+55-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:46:13-49
+56            android:windowSoftInputMode="adjustPan" />
+56-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:47:13-52
+57
+58        <service
+58-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:49:9-52:39
+59            android:name="com.example.infyULabs.service.NanoBLEService"
+59-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:50:13-51
+60            android:enabled="true"
+60-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:51:13-35
+61            android:exported="true" />
+61-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:52:13-36
+62
+63        <activity
+63-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:54:9-56:61
+64            android:name="com.example.infyULabs.nir.ScanActivity"
+64-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:55:13-45
+65            android:screenOrientation="portrait" />
+65-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:56:13-49
 66        <activity
-66-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:58:9-60:52
+66-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:57:9-59:52
 67            android:name="com.example.infyULabs.userProfile.ForgetPassword"
-67-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:59:13-55
+67-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:58:13-55
 68            android:screenOrientation="portrait" />
-68-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:60:13-49
+68-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:59:13-49
 69        <activity
-69-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:61:9-63:52
+69-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:60:9-62:52
 70            android:name="com.example.infyULabs.userProfile.Signup"
-70-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:62:13-47
+70-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:61:13-47
 71            android:screenOrientation="portrait" />
-71-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:63:13-49
+71-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:62:13-49
 72        <activity
-72-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:64:9-67:47
+72-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:63:9-66:47
 73            android:name="com.example.infyULabs.setting.SettingsActivity"
-73-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:65:13-53
+73-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:64:13-53
 74            android:screenOrientation="portrait"
-74-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:66:13-49
+74-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:65:13-49
 75            android:theme="@style/AppTheme" />
-75-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:67:13-44
+75-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:66:13-44
 76
 77        <meta-data
-77-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:69:9-71:53
+77-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:68:9-70:53
 78            android:name="com.google.android.actions"
-78-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:70:13-54
+78-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:69:13-54
 79            android:resource="@xml/edittextstyle" />
-79-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:71:13-50
+79-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:70:13-50
 80
 81        <activity
-81-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:73:9-75:52
+81-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:72:9-74:52
 82            android:name="com.example.infyULabs.Connection"
-82-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:74:13-39
+82-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:73:13-39
 83            android:screenOrientation="portrait" />
-83-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:75:13-49
+83-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:74:13-49
 84        <activity
-84-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:76:9-78:52
+84-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:75:9-77:52
 85            android:name="com.example.infyULabs.ChooseTheData"
-85-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:77:13-42
+85-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:76:13-42
 86            android:screenOrientation="portrait" />
-86-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:78:13-49
+86-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:77:13-49
 87        <activity
-87-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:79:9-81:52
+87-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:78:9-80:52
 88            android:name="com.example.infyULabs.Report"
-88-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:80:13-35
+88-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:79:13-35
 89            android:screenOrientation="portrait" />
-89-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:81:13-49
+89-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:80:13-49
 90        <activity
-90-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:82:9-84:52
+90-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:81:9-83:52
 91            android:name="com.example.infyULabs.Addtoreport"
-91-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:83:13-40
+91-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:82:13-40
 92            android:screenOrientation="portrait" />
-92-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:84:13-49
+92-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:83:13-49
 93        <activity
-93-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:85:9-87:52
+93-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:84:9-86:52
 94            android:name="com.example.infyULabs.Profile"
-94-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:86:13-36
+94-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:85:13-36
 95            android:screenOrientation="portrait" />
-95-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:87:13-49
+95-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:86:13-49
 96        <activity
-96-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:88:9-90:52
+96-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:87:9-89:52
 97            android:name="com.example.infyULabs.Logs"
-97-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:89:13-33
+97-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:88:13-33
 98            android:screenOrientation="portrait" />
-98-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:90:13-49
+98-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:89:13-49
 99        <activity
-99-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:91:9-93:52
+99-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:90:9-92:52
 100            android:name="com.example.infyULabs.setting.SettingOfApp"
-100-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:92:13-49
+100-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:91:13-49
 101            android:screenOrientation="portrait" />
-101-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:93:13-49
+101-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:92:13-49
 102        <activity
-102-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:94:9-96:52
+102-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:93:9-95:52
 103            android:name="com.example.infyULabs.Support"
-103-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:95:13-36
+103-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:94:13-36
 104            android:screenOrientation="portrait" />
-104-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:96:13-49
+104-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:95:13-49
 105        <activity
-105-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:97:9-99:52
+105-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:96:9-98:52
 106            android:name="com.example.infyULabs.Trend"
-106-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:98:13-34
+106-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:97:13-34
 107            android:screenOrientation="portrait" />
-107-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:99:13-49
+107-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:98:13-49
 108        <activity
-108-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:100:9-102:52
+108-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:99:9-101:52
 109            android:name="com.example.infyULabs.userProfile.LoginActivity"
-109-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:101:13-54
+109-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:100:13-54
 110            android:screenOrientation="portrait" />
-110-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:102:13-49
+110-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:101:13-49
 111        <activity
-111-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:103:9-105:52
+111-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:102:9-104:52
 112            android:name="com.example.infyULabs.second"
-112-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:104:13-35
+112-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:103:13-35
 113            android:screenOrientation="portrait" />
-113-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:105:13-49
+113-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:104:13-49
 114        <activity
-114-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:106:9-108:52
+114-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:105:9-107:52
 115            android:name="com.example.infyULabs.dataAnalysis.MainActivity"
-115-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:107:13-54
+115-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:106:13-54
 116            android:screenOrientation="portrait" />
-116-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/src/main/AndroidManifest.xml:108:13-49
+116-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:107:13-49
 117        <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
 117-->[com.akexorcist:bluetoothspp:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/AndroidManifest.xml:11:9-83
 117-->[com.akexorcist:bluetoothspp:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/AndroidManifest.xml:11:19-80
-118    </application>
-119
-120</manifest>
+118
+119        <service
+119-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:15:9-18:39
+120            android:name="com.ISCSDK.ISCNIRScanSDK"
+120-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:16:13-52
+121            android:enabled="true"
+121-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:17:13-35
+122            android:exported="true" />
+122-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:18:13-36
+123    </application>
+124
+125</manifest>

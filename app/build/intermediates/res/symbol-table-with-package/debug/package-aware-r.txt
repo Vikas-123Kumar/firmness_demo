@@ -1263,6 +1263,7 @@ id add
 id addItem
 id alertTitle
 id all
+id all_light
 id always
 id app_bar
 id async
@@ -1406,6 +1407,8 @@ id newline
 id nir
 id nirConnection
 id nirScan
+id nir_light
+id nir_switch
 id none
 id normal
 id notification_background
@@ -1536,6 +1539,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id trends_card
+id triad
+id triad_switch
 id tv_continuous
 id tv_nano_mac
 id tv_nano_name
@@ -1552,6 +1557,8 @@ id user
 id user_email
 id user_profile_Sheet
 id username
+id uv_light
+id uv_nir
 id uv_switch
 id uv_vis
 id view_clear_divider
@@ -1562,6 +1569,9 @@ id view_set_divider
 id view_temp_divider
 id viewpager
 id visible
+id white_light
+id white_nir
+id white_uv
 id withText
 id wrap
 id wrap_content
@@ -1640,6 +1650,7 @@ layout activity_splash_screen
 layout activity_support
 layout activity_third
 layout activity_trend
+layout activity_triad_spectrometer
 layout alertdailog
 layout alertitem
 layout app_bar_main

@@ -33,6 +33,7 @@ public class GlobalClass extends Application {
         sharedPreferences.edit();
     }
 
+    public double[] X = {410, 435, 460, 485, 510, 535, 560, 585, 610, 645, 680, 705, 730, 760, 810, 860, 900, 940};
     public double[] lam1 = {309.8684371, 312.5906442206052, 315.3095849555105, 318.0252398921747, 320.7375894154504, 323.4466137112865, 326.1522927704302, 328.8546063921293, 331.55353418783426,
             334.2490555849007, 336.9411498302914, 339.6297959942786, 342.31497297414614, 344.99665949789164, 347.6748341279289, 350.3494752647898, 353.0205611508269, 355.6880698739155,
             358.3519793711554, 361.0122674325739, 363.6689117048274, 366.32188969490403, 368.9711787738255, 371.6167561803496, 374.2585990246722, 376.89668429212935, 379.5309888469002,
@@ -72,6 +73,14 @@ public class GlobalClass extends Application {
 
         // Setup handler for uncaught exceptions.
         //Thread.setDefaultUncaughtExceptionHandler();
+    }
+
+    public double[] getX() {
+        return X;
+    }
+
+    public void setX(double[] x) {
+        X = x;
     }
 
     public BluetoothDevice getSocket() {

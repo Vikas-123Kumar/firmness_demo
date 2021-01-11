@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/Android-Project-app_name_change/VikasProject-20191105T145732Z-001/Vikas/infyU Labs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "outputFile": "/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
                     "source": "/home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/res/values-sw720dp-land-v13/values.xml",

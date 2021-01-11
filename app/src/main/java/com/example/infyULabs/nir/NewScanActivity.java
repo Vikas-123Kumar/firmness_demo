@@ -22,6 +22,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
@@ -37,6 +38,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.ISCSDK.ISCNIRScanSDK;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -72,10 +74,13 @@ import com.opencsv.CSVWriter;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -141,7 +146,7 @@ public class NewScanActivity extends AppCompatActivity {
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothLeScanner mBluetoothLeScanner;
     private Handler mHandler;
-    private static final String DEVICE_NAME = "NIRScanNano";
+    private static final String DEVICE_NAME = "NIR";
     private boolean connected;
     private AlertDialog alertDialog;
     private TextView tv_scan_conf;
@@ -156,7 +161,6 @@ public class NewScanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_new_scan);
 
         mContext = this;
-
         calProgress = (ProgressBar) findViewById(R.id.calProgress);
         calProgress.setVisibility(View.VISIBLE);
         connected = false;
@@ -216,6 +220,7 @@ public class NewScanActivity extends AppCompatActivity {
                 LocalBroadcastManager.getInstance(mContext).sendBroadcast(new Intent(KSTNanoSDK.START_SCAN));
                 calProgress.setVisibility(View.VISIBLE);
                 btn_scan.setText(getString(R.string.scanning));
+                createFolder();
             }
         });
 
@@ -234,6 +239,8 @@ public class NewScanActivity extends AppCompatActivity {
         LocalBroadcastManager.getInstance(mContext).registerReceiver(disconnReceiver, disconnFilter);
         LocalBroadcastManager.getInstance(mContext).registerReceiver(scanConfReceiver, scanConfFilter);
         LocalBroadcastManager.getInstance(mContext).registerReceiver(scanStartedReceiver, scanStartedFilter);
+        LocalBroadcastManager.getInstance(mContext).registerReceiver(DeviceInfoReceiver, new IntentFilter(ISCNIRScanSDK.ACTION_INFO));
+
         setupToolbar();
     }
 
@@ -291,6 +298,7 @@ public class NewScanActivity extends AppCompatActivity {
         mAbsorbanceFloat = new ArrayList<>();
         mReflectanceFloat = new ArrayList<>();
         mWavelengthFloat = new ArrayList<>();
+        findFolder();
     }
 
     @Override
@@ -801,22 +809,81 @@ public class NewScanActivity extends AppCompatActivity {
 
             boolean saveOS = btn_os.isChecked();
             boolean continuous = btn_continuous.isChecked();
+            Log.e("continue out", continuous + "");
 
             writeCSV(ts, results, saveOS);
 //            writeCSVDict(ts, scanType, scanDate, String.valueOf(minWavelength), String.valueOf(maxWavelength), String.valueOf(results.getLength()), String.valueOf(results.getLength()), "1", "2.00", saveOS);
             if (continuous) {
+                Log.e("continue", continuous + "");
                 calProgress.setVisibility(View.VISIBLE);
                 btn_scan.setText(getString(R.string.scanning));
                 LocalBroadcastManager.getInstance(mContext).sendBroadcast(new Intent(KSTNanoSDK.SEND_DATA));
+            } else {
+                findFolder();
             }
         }
     }
 
+    String fruitNumber;
+
+    public void findFolder() {
+        try {
+            final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/InfyZer/" + fruitName);
+            if (!dir.exists()) {
+                if (!dir.mkdirs()) {
+                    Log.e("TAG", "could not create the directories");
+                }
+            }
+            int file = -1;
+            File[] files = dir.listFiles();
+            Log.d("Files", "Size: " + files.length);
+            for (int i = 0; i < files.length; i++) {
+                Log.d("Files", "FileName:" + files[i].getName());
+                int file1 = Integer.parseInt(files[i].getName());
+                if (file1 > file) {
+                    file = file1;
+                }
+            }
+            Log.e("folder name", file + "");
+
+            fruitNumber = String.valueOf(file + 1);
+
+//            int max = Collections.max(Arrays.asList(files));
+
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    String number = "";
+
+    public void createFolder() {
+        try {
+            if (fruitNumber.equals("0")) {
+                number = "1";
+            } else {
+                number = fruitNumber;
+            }
+            final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/InfyZer/" + fruitName + "/" + number);
+            if (!dir.exists()) {
+                if (!dir.mkdirs()) {
+                    Log.e("TAG", "could not create the directories");
+                }
+            }
+            //            int max = Collections.max(Arrays.asList(files));
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void writeCSV(String currentTime, KSTNanoSDK.ScanResults scanResults, boolean saveOS) {
         Log.e("fruitname", fruitName);
         if (saveOS) {
-            String csvOS = android.os.Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + fruitName + currentTime + ".csv";
-
+            String csvOS = android.os.Environment.getExternalStorageDirectory().getAbsolutePath() + "/InfyZer/" + fruitName + "/" + number + "/" + currentTime + ".csv";
             CSVWriter writer;
             try {
                 writer = new CSVWriter(new FileWriter(csvOS), ',', CSVWriter.NO_QUOTE_CHARACTER);
@@ -896,10 +963,12 @@ public class NewScanActivity extends AppCompatActivity {
                 public int getCurrentTimeout() {
                     return 50000;
                 }
+
                 @Override
                 public int getCurrentRetryCount() {
                     return 50000;
                 }
+
                 @Override
                 public void retry(VolleyError error) throws VolleyError {
 
@@ -970,6 +1039,7 @@ public class NewScanActivity extends AppCompatActivity {
             mHandler = new Handler();
             if (SettingsManager.getStringPref(mContext, SettingsManager.SharedPreferencesKeys.preferredDevice, null) != null) {
                 preferredDevice = SettingsManager.getStringPref(mContext, SettingsManager.SharedPreferencesKeys.preferredDevice, null);
+                Log.e("device name", preferredDevice);
                 scanPreferredLeDevice(true);
             } else {
                 scanLeDevice(true);
@@ -1000,7 +1070,9 @@ public class NewScanActivity extends AppCompatActivity {
             BluetoothDevice device = result.getDevice();
             String name = device.getName();
             if (name != null) {
-                if (device.getName().equals(DEVICE_NAME)) {
+                Log.e("name", name);
+                if (device.getAddress().equals(preferredDevice)) {
+                    Log.e("name123", name);
                     mNanoBLEService.connect(device.getAddress());
                     connected = true;
                     scanLeDevice(false);
@@ -1027,7 +1099,7 @@ public class NewScanActivity extends AppCompatActivity {
             BluetoothDevice device = result.getDevice();
             String name = device.getName();
             if (name != null) {
-                if (device.getName().equals(DEVICE_NAME)) {
+                if (device.getAddress().equals(preferredDevice)) {
                     if (device.getAddress().equals(preferredDevice)) {
                         mNanoBLEService.connect(device.getAddress());
                         connected = true;
@@ -1126,6 +1198,51 @@ public class NewScanActivity extends AppCompatActivity {
         alertDialog = alertDialogBuilder.create();
         alertDialog.show();
 
+    }
+
+    String model_name = "";
+    String model_num = "";
+    String serial_num = "";
+    String HWrev = "";
+    String Tivarev = "";
+    String Specrev = "";
+    private final BroadcastReceiver DeviceInfoReceiver = new DeviceInfoReceiver();
+
+    public class DeviceInfoReceiver extends BroadcastReceiver {
+        public void onReceive(Context context, Intent intent) {
+            model_name = intent.getStringExtra(ISCNIRScanSDK.EXTRA_MODEL_NUM);
+            serial_num = intent.getStringExtra(ISCNIRScanSDK.EXTRA_SERIAL_NUM);
+            HWrev = intent.getStringExtra(ISCNIRScanSDK.EXTRA_HW_REV);
+            Tivarev = intent.getStringExtra(ISCNIRScanSDK.EXTRA_TIVA_REV);
+            Specrev = intent.getStringExtra(ISCNIRScanSDK.EXTRA_SPECTRUM_REV);
+            Log.e("tiva version", Tivarev);
+
+//            if(Tivarev.substring(0,1) .equals("3") && (HWrev.substring(0,1).equals("E")|| HWrev.substring(0,1).equals("O")))
+//                isExtendVer = true;
+//            else
+//                isExtendVer = false;
+//            if(HWrev.substring(0,1).equals("N"))
+//                Dialog_Pane_Finish("Not support","Not to support the N version of the main board.\nWill go to the home page.");
+//            else
+//            {
+//                //Send broadcast to notify NanoBLEService to know the device is extension or not
+//                Notify_IsEXTVersion();
+//                GetFWLevel(Tivarev);
+//                InitParameter();
+//                if(fw_level.compareTo(FW_LEVEL.LEVEL_0)>0)
+//                {
+//                    //Request device MFG num
+//                    ISCNIRScanSDK.GetMFGNumber();
+//                }
+//                else
+//                {
+//                    Dialog_Pane_Finish("Firmware Out of Date","You must update the firmware on your NIRScan Nano to make this App working correctly!\n" +
+//                            "FW required version at least V2.4.4.\nDetected version is V" + Tivarev +".");
+//                }
+//                //Request device MFG num
+//                ISCNIRScanSDK.GetMFGNumber();
+//            }
+        }
     }
 
     /**

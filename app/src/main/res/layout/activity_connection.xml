@@ -119,6 +119,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/nir_switch"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_below="@+id/uv_switch"
@@ -141,6 +142,41 @@
 
                     <androidx.appcompat.widget.SwitchCompat
                         android:id="@+id/nir"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/mode"
+                        android:layout_weight="0.4"
+                        android:gravity="center"
+                        android:textOff="off"
+                        android:textOn="on"
+                        android:thumb="@drawable/show_swich"
+                        app:track="@drawable/swich_tract" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/nir_switch"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/triad"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        android:text="Triad Spectrometer"
+                        android:textSize="17sp">
+
+                    </TextView>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/triad_switch"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
