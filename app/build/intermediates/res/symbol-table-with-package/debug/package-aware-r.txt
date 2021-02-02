@@ -1402,6 +1402,7 @@ id navigation
 id navigation_add_to_report
 id navigation_header_container
 id navigation_scan
+id navigation_triad
 id never
 id newline
 id nir
@@ -1440,7 +1441,7 @@ id radio
 id receive_text
 id reflectance
 id relative
-id responseData
+id result_text
 id right
 id right_icon
 id right_side
@@ -1452,13 +1453,14 @@ id rl_temperature
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
+id scanNo
 id screen
 id scroll
+id scrollBar
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchView
 id search_badge
 id search_bar
 id search_button
@@ -1558,7 +1560,6 @@ id user_email
 id user_profile_Sheet
 id username
 id uv_light
-id uv_nir
 id uv_switch
 id uv_vis
 id view_clear_divider
@@ -1569,9 +1570,6 @@ id view_set_divider
 id view_temp_divider
 id viewpager
 id visible
-id white_light
-id white_nir
-id white_uv
 id withText
 id wrap
 id wrap_content
@@ -1704,6 +1702,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu activity_main_drawer
 menu bottom_navigation
+menu bottom_navigation_triad
 menu menu_devices
 menu menu_terminal
 mipmap ic_launcher

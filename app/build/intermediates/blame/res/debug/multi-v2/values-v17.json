@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
                     "source": "/home/ankit/.gradle/caches/transforms-2/files-2.1/e0447e42effbef3dcd2e406188edbf8d/appcompat-1.1.0/res/values-v17/values-v17.xml",

@@ -1,10 +1,10 @@
-#Mon Jan 11 13:16:48 IST 2021
+#Sat Jan 30 15:27:20 IST 2021
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex
-base.1=/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
-base.0=/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+base.2=/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_0.dex
+base.1=/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.0=/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex

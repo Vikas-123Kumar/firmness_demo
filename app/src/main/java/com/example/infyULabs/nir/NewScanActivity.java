@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -219,13 +220,15 @@ public class NewScanActivity extends AppCompatActivity {
             public void onClick(View view) {
                 LocalBroadcastManager.getInstance(mContext).sendBroadcast(new Intent(KSTNanoSDK.START_SCAN));
                 calProgress.setVisibility(View.VISIBLE);
+                if (btn_os.isChecked() == true) {
+                    createFolder();
+                }
                 btn_scan.setText(getString(R.string.scanning));
-                createFolder();
             }
         });
 
         btn_scan.setClickable(false);
-
+        findFolder();
         //Bind to the service. This will start it, and call the start command function
         Intent gattServiceIntent = new Intent(this, NanoBLEService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
@@ -239,7 +242,6 @@ public class NewScanActivity extends AppCompatActivity {
         LocalBroadcastManager.getInstance(mContext).registerReceiver(disconnReceiver, disconnFilter);
         LocalBroadcastManager.getInstance(mContext).registerReceiver(scanConfReceiver, scanConfFilter);
         LocalBroadcastManager.getInstance(mContext).registerReceiver(scanStartedReceiver, scanStartedFilter);
-        LocalBroadcastManager.getInstance(mContext).registerReceiver(DeviceInfoReceiver, new IntentFilter(ISCNIRScanSDK.ACTION_INFO));
 
         setupToolbar();
     }
@@ -272,7 +274,6 @@ public class NewScanActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-
         //Initialize view pager
         CustomPagerAdapter pagerAdapter = new CustomPagerAdapter(this);
         mViewPager.setAdapter(pagerAdapter);
@@ -298,7 +299,7 @@ public class NewScanActivity extends AppCompatActivity {
         mAbsorbanceFloat = new ArrayList<>();
         mReflectanceFloat = new ArrayList<>();
         mWavelengthFloat = new ArrayList<>();
-        findFolder();
+        Log.e("in resume", "resume");
     }
 
     @Override
@@ -810,8 +811,17 @@ public class NewScanActivity extends AppCompatActivity {
             boolean saveOS = btn_os.isChecked();
             boolean continuous = btn_continuous.isChecked();
             Log.e("continue out", continuous + "");
-
-            writeCSV(ts, results, saveOS);
+            int csvIndex;
+            List list = new ArrayList();
+            for (csvIndex = 0; csvIndex < results.getLength(); csvIndex++) {
+                float absorb = (-1) * (float) Math.log10((double) results.getUncalibratedIntensity()[csvIndex] / (double) results.getIntensity()[csvIndex]);
+                list.add(String.valueOf(absorb));
+            }
+            if (list.contains("NaN")) {
+                Toast.makeText(getApplicationContext(), "Please Scan Again", Toast.LENGTH_LONG).show();
+            } else {
+                writeCSV(ts, results, saveOS);
+            }
 //            writeCSVDict(ts, scanType, scanDate, String.valueOf(minWavelength), String.valueOf(maxWavelength), String.valueOf(results.getLength()), String.valueOf(results.getLength()), "1", "2.00", saveOS);
             if (continuous) {
                 Log.e("continue", continuous + "");
@@ -831,7 +841,6 @@ public class NewScanActivity extends AppCompatActivity {
             final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/InfyZer/" + fruitName);
             if (!dir.exists()) {
                 if (!dir.mkdirs()) {
-                    Log.e("TAG", "could not create the directories");
                 }
             }
             int file = -1;
@@ -845,12 +854,7 @@ public class NewScanActivity extends AppCompatActivity {
                 }
             }
             Log.e("folder name", file + "");
-
             fruitNumber = String.valueOf(file + 1);
-
-//            int max = Collections.max(Arrays.asList(files));
-
-
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -872,7 +876,6 @@ public class NewScanActivity extends AppCompatActivity {
                     Log.e("TAG", "could not create the directories");
                 }
             }
-            //            int max = Collections.max(Arrays.asList(files));
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -897,8 +900,8 @@ public class NewScanActivity extends AppCompatActivity {
                     float absorb = (-1) * (float) Math.log10((double) scanResults.getUncalibratedIntensity()[csvIndex] / (double) scanResults.getIntensity()[csvIndex]);
                     float reflect = (float) results.getUncalibratedIntensity()[csvIndex] / results.getIntensity()[csvIndex];
                     data.add(new String[]{String.valueOf(waves), String.valueOf(intens), String.valueOf(absorb), String.valueOf(reflect)});
-                }
 
+                }
                 writer.writeAll(data);
                 writer.close();
             } catch (IOException e) {
@@ -922,16 +925,17 @@ public class NewScanActivity extends AppCompatActivity {
     }
 
     public void dataToServer(String receivedData) {
-        SharedPreferences prefs = getSharedPreferences("userrecord", MODE_PRIVATE);
-        String token = prefs.getString("token", "No name defined");//"No n
+//        SharedPreferences prefs = getSharedPreferences("userrecord", MODE_PRIVATE);
+//        String token = prefs.getString("token", "No name defined");//"No n
         JSONObject jsonObject = new JSONObject();
-        Log.e("token", token);
+//        Log.e("token", token);
+        String url_fruit = fruitName + "-prediction-nir";
         try {
             jsonObject.put("spectrum", receivedData.trim());
 //            jsonObject.put("name", fruitName.toLowerCase());
 //            jsonObject.put("token", token);
             Log.e("json", jsonObject + "");
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, API_URL.nir_url, jsonObject,
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, API_URL.url + url_fruit, jsonObject,
                     new Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
@@ -944,9 +948,20 @@ public class NewScanActivity extends AppCompatActivity {
                                 String firmness_91 = response.optString("firmness_91");
                                 String waterCore = response.optString("watercore");
                                 String starch = response.optString("starch");
-                                brixData.setText("Brix : " + Brix + "\n\npH   : " + acidity
-                                        + "\n\nFirmness : " + firmness + "\n\nFirmness 71 : " + firmness_71 + "\n\nFirmness 91 : " + firmness_91 + "\n\nStarch : " + starch
-                                        + "\n\nWatercore : " + waterCore);
+                                if (acidity.equals("") && firmness.equals("")) {
+                                    brixData.setText("Brix : " + Brix);
+                                } else if (firmness.equals("")) {
+                                    brixData.setText("Brix : " + Brix + "\n\npH   : " + acidity);
+                                } else if (acidity.equals("")) {
+                                    brixData.setText("Brix : " + Brix + "\n\nFirmness : " + firmness);
+                                } else {
+                                    brixData.setText("Brix : " + Brix + "\n\npH   : " + acidity
+                                            + "\n\nFirmness : " + firmness);
+                                }
+
+
+                                // + "\n\nFirmness 71 : " + firmness_71 + "\n\nFirmness 91 : " + firmness_91 + "\n\nStarch : " + starch
+                                //                                        + "\n\nWatercore : " + waterCore
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -958,22 +973,24 @@ public class NewScanActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Failed to connect", Toast.LENGTH_LONG).show();
                 }
             });
-            jsonObjectRequest.setRetryPolicy(new RetryPolicy() {
-                @Override
-                public int getCurrentTimeout() {
-                    return 50000;
-                }
+            jsonObjectRequest.setRetryPolicy(new
 
-                @Override
-                public int getCurrentRetryCount() {
-                    return 50000;
-                }
+                                                     RetryPolicy() {
+                                                         @Override
+                                                         public int getCurrentTimeout() {
+                                                             return 50000;
+                                                         }
 
-                @Override
-                public void retry(VolleyError error) throws VolleyError {
+                                                         @Override
+                                                         public int getCurrentRetryCount() {
+                                                             return 50000;
+                                                         }
 
-                }
-            });
+                                                         @Override
+                                                         public void retry(VolleyError error) throws VolleyError {
+
+                                                         }
+                                                     });
             rQueue = Volley.newRequestQueue(NewScanActivity.this);
             rQueue.add(jsonObjectRequest);
         } catch (Exception e) {
@@ -1200,51 +1217,6 @@ public class NewScanActivity extends AppCompatActivity {
 
     }
 
-    String model_name = "";
-    String model_num = "";
-    String serial_num = "";
-    String HWrev = "";
-    String Tivarev = "";
-    String Specrev = "";
-    private final BroadcastReceiver DeviceInfoReceiver = new DeviceInfoReceiver();
-
-    public class DeviceInfoReceiver extends BroadcastReceiver {
-        public void onReceive(Context context, Intent intent) {
-            model_name = intent.getStringExtra(ISCNIRScanSDK.EXTRA_MODEL_NUM);
-            serial_num = intent.getStringExtra(ISCNIRScanSDK.EXTRA_SERIAL_NUM);
-            HWrev = intent.getStringExtra(ISCNIRScanSDK.EXTRA_HW_REV);
-            Tivarev = intent.getStringExtra(ISCNIRScanSDK.EXTRA_TIVA_REV);
-            Specrev = intent.getStringExtra(ISCNIRScanSDK.EXTRA_SPECTRUM_REV);
-            Log.e("tiva version", Tivarev);
-
-//            if(Tivarev.substring(0,1) .equals("3") && (HWrev.substring(0,1).equals("E")|| HWrev.substring(0,1).equals("O")))
-//                isExtendVer = true;
-//            else
-//                isExtendVer = false;
-//            if(HWrev.substring(0,1).equals("N"))
-//                Dialog_Pane_Finish("Not support","Not to support the N version of the main board.\nWill go to the home page.");
-//            else
-//            {
-//                //Send broadcast to notify NanoBLEService to know the device is extension or not
-//                Notify_IsEXTVersion();
-//                GetFWLevel(Tivarev);
-//                InitParameter();
-//                if(fw_level.compareTo(FW_LEVEL.LEVEL_0)>0)
-//                {
-//                    //Request device MFG num
-//                    ISCNIRScanSDK.GetMFGNumber();
-//                }
-//                else
-//                {
-//                    Dialog_Pane_Finish("Firmware Out of Date","You must update the firmware on your NIRScan Nano to make this App working correctly!\n" +
-//                            "FW required version at least V2.4.4.\nDetected version is V" + Tivarev +".");
-//                }
-//                //Request device MFG num
-//                ISCNIRScanSDK.GetMFGNumber();
-//            }
-        }
-    }
-
     /**
      * Custom receiver for receiving calibration coefficient data.
      */
@@ -1321,16 +1293,66 @@ public class NewScanActivity extends AppCompatActivity {
             Log.w("_JNI", "largeArray Size: " + largeArray.length);
             KSTNanoSDK.ScanConfiguration scanConf = KSTNanoSDK.KSTNanoSDK_dlpSpecScanReadConfiguration(intent.getByteArrayExtra(KSTNanoSDK.EXTRA_DATA));
             //KSTNanoSDK.ScanConfiguration scanConf = KSTNanoSDK.KSTNanoSDK_dlpSpecScanReadConfiguration(largeArray);
-
 //            activeConf = scanConf;
-
             barProgressDialog.dismiss();
             btn_scan.setClickable(true);
-
+//            if (!fruitNumber.equals("-1")) {
+//                askForSaveDialog();
+//            }
 //            SettingsManager.storeStringPref(mContext, SettingsManager.SharedPreferencesKeys.scanConfiguration, scanConf.getConfigName());
-//            tv_scan_conf.setText(scanConf.getConfigName());
+
+        }
+    }
+
+    public void askForSaveDialog() {
+        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
+        alertDialogBuilder.setTitle("Save Scan");
+        alertDialogBuilder.setCancelable(false);
+        alertDialogBuilder.setMessage("Do you want to save?");
+        alertDialogBuilder.setPositiveButton("Prev", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface arg0, int arg1) {
+                findPrevFolder();
+            }
+        });
+        alertDialogBuilder.setNegativeButton("New", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                alertDialog.dismiss();
+            }
+        });
+        alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+    }
 
 
+    public void findPrevFolder() {
+        try {
+            final File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/InfyZer/" + fruitName);
+            if (!dir.exists()) {
+                if (!dir.mkdirs()) {
+                    Log.e("TAG", "could not create the directories");
+                }
+            }
+            int file = -1;
+            File[] files = dir.listFiles();
+            Log.d("Files", "Size: " + files.length);
+            for (int i = 0; i < files.length; i++) {
+                Log.d("Files", "FileName:" + files[i].getName());
+                int file1 = Integer.parseInt(files[i].getName());
+                if (file1 > file) {
+                    file = file1;
+                }
+            }
+            Log.e("folder name", file + "");
+            if (String.valueOf(file).equals("-1")) {
+                Toast.makeText(getApplicationContext(), "No Previous available", Toast.LENGTH_LONG).show();
+            } else {
+                fruitNumber = String.valueOf(file);
+            }
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 

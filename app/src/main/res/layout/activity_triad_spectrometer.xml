@@ -60,7 +60,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/navigation"
+            android:layout_above="@+id/navigation_triad"
             android:background="#2cd3d3d3">
 
             <LinearLayout
@@ -85,13 +85,51 @@
 
                 <include layout="@layout/alertdailog"></include>
 
-                <TextView
-                    android:id="@+id/responseData"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
+                    android:layout_height="wrap_content">
 
-                </TextView>
+                    <LinearLayout
+                        android:id="@+id/ll_os"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_saveOS"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/save_to_android"
+                            android:textAppearance="?android:textAppearanceMedium" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_saveOS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dip40"
+                            android:checked="true"
+                            android:textOff="No"
+                            android:textOn="Yes" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:id="@+id/result_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/Black"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -104,8 +142,8 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
-                        android:text="UV "
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:text="UV ">
 
                     </Button>
 
@@ -114,64 +152,64 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
-                        android:text="nir "
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:text="nir ">
 
                     </Button>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:orientation="horizontal">-->
 
-                    <Button
-                        android:id="@+id/white_light"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:text="white"
-                        android:layout_weight="0.5">
+                <!--                    <Button-->
+                <!--                        android:id="@+id/white_light"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_margin="10dp"-->
+                <!--                        android:text="white"-->
+                <!--                        android:layout_weight="0.5">-->
 
-                    </Button>
+                <!--                    </Button>-->
 
-                    <Button
-                        android:id="@+id/white_nir"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:text="white+nir"
-                        android:layout_weight="0.5">
+                <!--                    <Button-->
+                <!--                        android:id="@+id/white_nir"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_margin="10dp"-->
+                <!--                        android:text="white+nir"-->
+                <!--                        android:layout_weight="0.5">-->
 
-                    </Button>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                <!--                    </Button>-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:orientation="horizontal">-->
 
-                    <Button
-                        android:id="@+id/white_uv"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:text="white+UV"
-                        android:layout_weight="0.5">
+                <!--                    <Button-->
+                <!--                        android:id="@+id/white_uv"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_margin="10dp"-->
+                <!--                        android:text="white+UV"-->
+                <!--                        android:layout_weight="0.5">-->
 
-                    </Button>
+                <!--                    </Button>-->
 
-                    <Button
-                        android:id="@+id/uv_nir"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:text="uv+nir"
-                        android:layout_weight="0.5">
+                <!--                    <Button-->
+                <!--                        android:id="@+id/uv_nir"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_margin="10dp"-->
+                <!--                        android:text="Without Light"-->
+                <!--                        android:layout_weight="0.5">-->
 
-                    </Button>
-                </LinearLayout>
+                <!--                    </Button>-->
+                <!--                </LinearLayout>-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -184,34 +222,24 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
-                        android:text="All three"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:text="All three">
 
                     </Button>
-
-<!--                    <Button-->
-<!--                        android:id="@+id/off_button"-->
-<!--                        android:layout_width="0dp"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:layout_margin="10dp"-->
-<!--                        android:text="off"-->
-<!--                        android:layout_weight="0.5">-->
-
-<!--                    </Button>-->
                 </LinearLayout>
-            </LinearLayout>
 
+            </LinearLayout>
         </ScrollView>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_width="wrap_content"
+            android:id="@+id/navigation_triad"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_alignParentBottom="true"
             android:background="?android:attr/windowBackground"
             android:foreground="?attr/selectableItemBackground"
             app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_navigation">
+            app:menu="@menu/bottom_navigation_triad">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 

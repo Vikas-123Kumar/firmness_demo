@@ -6,233 +6,245 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml
+8-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml
+9-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.BLUETOOTH" />
-11-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:6:5-68
-11-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:6:22-65
+11-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:6:5-68
+11-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:6:22-65
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:7:5-79
-12-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:7:22-76
+12-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:7:5-79
+12-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:8:5-67
-13-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:8:22-64
+13-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:8:5-67
+13-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:8:22-64
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:9:5-79
-14-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:9:22-76
+14-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:9:5-79
+14-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:9:22-76
 15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:10:5-81
-15-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:10:22-78
-16
-17    <uses-feature
-17-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:12:5-14:35
-18        android:name="android.hardware.bluetooth_le"
-18-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:13:9-53
-19        android:required="true" />
-19-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:14:9-32
-20
-21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-21-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:16:5-80
-21-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:16:22-77
-22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-22-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:17:5-81
-22-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:17:22-78
-23    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-23-->[:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:12:5-74
-23-->[:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:12:22-71
-24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-25
-26    <application
-26-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:19:5-108:19
-27        android:name="com.example.infyULabs.GlobalClass"
-27-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:20:9-36
-28        android:allowBackup="true"
-28-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:21:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/2d4ddccafaffb421fd7007b55d21d40f/core-1.1.0/AndroidManifest.xml:24:18-86
-30        android:debuggable="true"
-31        android:icon="@mipmap/ic_launcher"
-31-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:22:9-43
-32        android:label="@string/app_name"
-32-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:23:9-41
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:24:9-54
-34        android:screenOrientation="portrait"
-34-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:25:9-45
-35        android:supportsRtl="true"
-35-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:26:9-35
-36        android:testOnly="true"
-37        android:theme="@style/AppTheme"
-37-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:27:9-40
-38        android:usesCleartextTraffic="true" >
-38-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:28:9-44
-39        <activity android:name="com.example.infyULabs.TriadSpectrometer" />
-39-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:30:9-64
-39-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:30:19-52
-40        <activity android:name="com.example.infyULabs.nir.NirConnection" />
-40-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:31:9-55
-40-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:31:19-52
-41        <activity
-41-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:32:9-34:52
-42            android:name="com.example.infyULabs.RiceData"
-42-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:33:13-37
-43            android:screenOrientation="portrait" />
-43-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:34:13-49
-44        <activity
-44-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:35:9-43:20
-45            android:name="com.example.infyULabs.SplashScreen"
-45-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:36:13-41
-46            android:screenOrientation="portrait" >
-46-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:37:13-49
-47            <intent-filter>
-47-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:38:13-42:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:39:17-69
-48-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:39:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:41:17-77
-50-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:41:27-74
-51            </intent-filter>
-52        </activity>
-53        <activity
-53-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:44:9-47:55
-54            android:name="com.example.infyULabs.nir.NewScanActivity"
-54-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:45:13-48
-55            android:screenOrientation="portrait"
-55-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:46:13-49
-56            android:windowSoftInputMode="adjustPan" />
-56-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:47:13-52
-57
-58        <service
-58-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:49:9-52:39
-59            android:name="com.example.infyULabs.service.NanoBLEService"
-59-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:50:13-51
-60            android:enabled="true"
-60-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:51:13-35
-61            android:exported="true" />
-61-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:52:13-36
-62
-63        <activity
-63-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:54:9-56:61
-64            android:name="com.example.infyULabs.nir.ScanActivity"
-64-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:55:13-45
-65            android:screenOrientation="portrait" />
-65-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:56:13-49
-66        <activity
-66-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:57:9-59:52
-67            android:name="com.example.infyULabs.userProfile.ForgetPassword"
-67-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:58:13-55
-68            android:screenOrientation="portrait" />
-68-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:59:13-49
-69        <activity
-69-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:60:9-62:52
-70            android:name="com.example.infyULabs.userProfile.Signup"
-70-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:61:13-47
-71            android:screenOrientation="portrait" />
-71-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:62:13-49
-72        <activity
-72-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:63:9-66:47
-73            android:name="com.example.infyULabs.setting.SettingsActivity"
-73-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:64:13-53
-74            android:screenOrientation="portrait"
-74-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:65:13-49
-75            android:theme="@style/AppTheme" />
-75-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:66:13-44
-76
-77        <meta-data
-77-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:68:9-70:53
-78            android:name="com.google.android.actions"
-78-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:69:13-54
-79            android:resource="@xml/edittextstyle" />
-79-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:70:13-50
-80
-81        <activity
-81-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:72:9-74:52
-82            android:name="com.example.infyULabs.Connection"
-82-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:73:13-39
-83            android:screenOrientation="portrait" />
-83-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:74:13-49
-84        <activity
-84-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:75:9-77:52
-85            android:name="com.example.infyULabs.ChooseTheData"
-85-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:76:13-42
-86            android:screenOrientation="portrait" />
-86-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:77:13-49
-87        <activity
-87-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:78:9-80:52
-88            android:name="com.example.infyULabs.Report"
-88-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:79:13-35
-89            android:screenOrientation="portrait" />
-89-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:80:13-49
-90        <activity
-90-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:81:9-83:52
-91            android:name="com.example.infyULabs.Addtoreport"
-91-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:82:13-40
-92            android:screenOrientation="portrait" />
-92-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:83:13-49
-93        <activity
-93-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:84:9-86:52
-94            android:name="com.example.infyULabs.Profile"
-94-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:85:13-36
-95            android:screenOrientation="portrait" />
-95-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:86:13-49
-96        <activity
-96-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:87:9-89:52
-97            android:name="com.example.infyULabs.Logs"
-97-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:88:13-33
-98            android:screenOrientation="portrait" />
-98-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:89:13-49
-99        <activity
-99-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:90:9-92:52
-100            android:name="com.example.infyULabs.setting.SettingOfApp"
-100-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:91:13-49
-101            android:screenOrientation="portrait" />
-101-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:92:13-49
-102        <activity
-102-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:93:9-95:52
-103            android:name="com.example.infyULabs.Support"
-103-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:94:13-36
-104            android:screenOrientation="portrait" />
-104-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:95:13-49
-105        <activity
-105-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:96:9-98:52
-106            android:name="com.example.infyULabs.Trend"
-106-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:97:13-34
-107            android:screenOrientation="portrait" />
-107-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:98:13-49
-108        <activity
-108-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:99:9-101:52
-109            android:name="com.example.infyULabs.userProfile.LoginActivity"
-109-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:100:13-54
-110            android:screenOrientation="portrait" />
-110-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:101:13-49
-111        <activity
-111-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:102:9-104:52
-112            android:name="com.example.infyULabs.second"
-112-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:103:13-35
-113            android:screenOrientation="portrait" />
-113-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:104:13-49
-114        <activity
-114-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:105:9-107:52
-115            android:name="com.example.infyULabs.dataAnalysis.MainActivity"
-115-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:106:13-54
-116            android:screenOrientation="portrait" />
-116-->/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/src/main/AndroidManifest.xml:107:13-49
-117        <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
-117-->[com.akexorcist:bluetoothspp:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/AndroidManifest.xml:11:9-83
-117-->[com.akexorcist:bluetoothspp:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/AndroidManifest.xml:11:19-80
+15-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:10:5-81
+15-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+16-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:11:5-85
+16-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:11:22-82
+17
+18    <uses-feature
+18-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:13:5-15:35
+19        android:name="android.hardware.bluetooth_le"
+19-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:14:9-53
+20        android:required="true" />
+20-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:15:9-32
+21
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:17:5-80
+22-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:17:22-77
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:18:5-81
+23-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:18:22-78
+24    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+24-->[:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:12:5-74
+24-->[:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:12:22-71
+25    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+26
+27    <application
+27-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:20:5-115:19
+28        android:name="com.example.infyULabs.GlobalClass"
+28-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:21:9-36
+29        android:allowBackup="true"
+29-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:22:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/2d4ddccafaffb421fd7007b55d21d40f/core-1.1.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:23:9-43
+33        android:label="@string/app_name"
+33-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:24:9-41
+34        android:requestLegacyExternalStorage="true"
+34-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:26:9-52
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:25:9-54
+36        android:screenOrientation="portrait"
+36-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:27:9-45
+37        android:supportsRtl="true"
+37-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:28:9-35
+38        android:theme="@style/AppTheme"
+38-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:29:9-40
+39        android:usesCleartextTraffic="true" >
+39-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:30:9-44
+40        <activity android:name="com.example.infyULabs.TriadSpectrometer" />
+40-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:32:9-64
+40-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:32:19-52
+41        <activity android:name="com.example.infyULabs.nir.NirConnection" />
+41-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:33:9-55
+41-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:33:19-52
+42        <activity
+42-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:34:9-36:52
+43            android:name="com.example.infyULabs.RiceData"
+43-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:35:13-37
+44            android:screenOrientation="portrait" />
+44-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:36:13-49
+45        <activity
+45-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:37:9-45:20
+46            android:name="com.example.infyULabs.SplashScreen"
+46-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:38:13-41
+47            android:screenOrientation="portrait" >
+47-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:39:13-49
+48            <intent-filter>
+48-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:40:13-44:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:41:17-69
+49-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:41:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:43:17-77
+51-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:43:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:46:9-49:55
+55            android:name="com.example.infyULabs.nir.NewScanActivity"
+55-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:47:13-48
+56            android:screenOrientation="portrait"
+56-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:48:13-49
+57            android:windowSoftInputMode="adjustPan" />
+57-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:49:13-52
+58
+59        <service
+59-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:51:9-54:39
+60            android:name="com.example.infyULabs.service.NanoBLEService"
+60-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:52:13-51
+61            android:enabled="true"
+61-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:53:13-35
+62            android:exported="true" />
+62-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:54:13-36
+63
+64        <activity
+64-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:56:9-58:61
+65            android:name="com.example.infyULabs.nir.ScanActivity"
+65-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:57:13-45
+66            android:screenOrientation="portrait" />
+66-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:58:13-49
+67        <activity
+67-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:59:9-61:52
+68            android:name="com.example.infyULabs.userProfile.ForgetPassword"
+68-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:60:13-55
+69            android:screenOrientation="portrait" />
+69-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:61:13-49
+70        <activity
+70-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:62:9-64:52
+71            android:name="com.example.infyULabs.userProfile.Signup"
+71-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:63:13-47
+72            android:screenOrientation="portrait" />
+72-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:64:13-49
+73        <activity
+73-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:65:9-68:47
+74            android:name="com.example.infyULabs.setting.SettingsActivity"
+74-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:66:13-53
+75            android:screenOrientation="portrait"
+75-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:67:13-49
+76            android:theme="@style/AppTheme" />
+76-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:68:13-44
+77
+78        <meta-data
+78-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:70:9-72:53
+79            android:name="com.google.android.actions"
+79-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:71:13-54
+80            android:resource="@xml/edittextstyle" />
+80-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:72:13-50
+81
+82        <activity
+82-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:74:9-76:52
+83            android:name="com.example.infyULabs.Connection"
+83-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:75:13-39
+84            android:screenOrientation="portrait" />
+84-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:76:13-49
+85        <activity
+85-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:77:9-79:52
+86            android:name="com.example.infyULabs.ChooseTheData"
+86-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:78:13-42
+87            android:screenOrientation="portrait" />
+87-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:79:13-49
+88        <activity
+88-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:80:9-82:52
+89            android:name="com.example.infyULabs.Report"
+89-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:81:13-35
+90            android:screenOrientation="portrait" />
+90-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:82:13-49
+91        <activity
+91-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:83:9-85:52
+92            android:name="com.example.infyULabs.Addtoreport"
+92-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:84:13-40
+93            android:screenOrientation="portrait" />
+93-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:85:13-49
+94        <activity
+94-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:86:9-88:52
+95            android:name="com.example.infyULabs.Profile"
+95-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:87:13-36
+96            android:screenOrientation="portrait" />
+96-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:88:13-49
+97        <activity
+97-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:89:9-91:52
+98            android:name="com.example.infyULabs.Logs"
+98-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:90:13-33
+99            android:screenOrientation="portrait" />
+99-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:91:13-49
+100        <activity
+100-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:92:9-94:52
+101            android:name="com.example.infyULabs.setting.SettingOfApp"
+101-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:93:13-49
+102            android:screenOrientation="portrait" />
+102-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:94:13-49
+103        <activity
+103-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:95:9-97:52
+104            android:name="com.example.infyULabs.Support"
+104-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:96:13-36
+105            android:screenOrientation="portrait" />
+105-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:97:13-49
+106        <activity
+106-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:98:9-100:52
+107            android:name="com.example.infyULabs.Trend"
+107-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:99:13-34
+108            android:screenOrientation="portrait" />
+108-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:100:13-49
+109        <activity
+109-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:101:9-103:52
+110            android:name="com.example.infyULabs.userProfile.LoginActivity"
+110-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:102:13-54
+111            android:screenOrientation="portrait" />
+111-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:103:13-49
+112        <activity
+112-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:104:9-106:52
+113            android:name="com.example.infyULabs.second"
+113-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:105:13-35
+114            android:screenOrientation="portrait" />
+114-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:106:13-49
+115        <activity
+115-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:107:9-109:52
+116            android:name="com.example.infyULabs.dataAnalysis.MainActivity"
+116-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:108:13-54
+117            android:screenOrientation="portrait" />
+117-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:109:13-49
 118
 119        <service
-119-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:15:9-18:39
-120            android:name="com.ISCSDK.ISCNIRScanSDK"
-120-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:16:13-52
-121            android:enabled="true"
-121-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:17:13-35
-122            android:exported="true" />
-122-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c8b2619094de5df19dfba5cdb2122e6e/jetified-ISCSDK-release/AndroidManifest.xml:18:13-36
-123    </application>
+119-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:111:9-113:38
+120            android:name="com.example.infyULabs.socket.SerialService"
+120-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:112:13-49
+121            android:enabled="true" />
+121-->/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:113:13-35
+122
+123        <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
+123-->[com.akexorcist:bluetoothspp:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/AndroidManifest.xml:11:9-83
+123-->[com.akexorcist:bluetoothspp:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/80aa5e454ed979ec32bcbfb444db0bc9/bluetoothspp-1.0.0/AndroidManifest.xml:11:19-80
 124
-125</manifest>
+125        <service
+125-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/2f7e95738e358218aafe43ed4a46926a/jetified-ISCSDK-release/AndroidManifest.xml:15:9-18:39
+126            android:name="com.ISCSDK.ISCNIRScanSDK"
+126-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/2f7e95738e358218aafe43ed4a46926a/jetified-ISCSDK-release/AndroidManifest.xml:16:13-52
+127            android:enabled="true"
+127-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/2f7e95738e358218aafe43ed4a46926a/jetified-ISCSDK-release/AndroidManifest.xml:17:13-35
+128            android:exported="true" />
+128-->[:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1/2f7e95738e358218aafe43ed4a46926a/jetified-ISCSDK-release/AndroidManifest.xml:18:13-36
+129    </application>
+130
+131</manifest>

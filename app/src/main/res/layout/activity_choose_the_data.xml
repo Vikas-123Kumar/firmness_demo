@@ -54,13 +54,13 @@
         android:id="@+id/one"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_below="@id/app_bar">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/searchView"
             android:orientation="vertical">
 
             <TextView
@@ -92,15 +92,15 @@
                 app:fabSize="auto" />
         </LinearLayout>
 
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_margin="25dp"
-            android:background="@drawable/ic_crop_7_5_black_24dp"
-            android:iconifiedByDefault="false"
-            android:queryHint="Search Here" />
+<!--        <SearchView-->
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:background="@drawable/ic_crop_7_5_black_24dp"-->
+<!--            android:iconifiedByDefault="false"-->
+<!--            android:queryHint="Search Here" />-->
     </RelativeLayout>
 
 </RelativeLayout>

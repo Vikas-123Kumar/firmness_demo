@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ankit/Desktop/AndroidApplication/new folder/Student_project-master/infyU Labs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/home/ankit/.gradle/caches/transforms-2/files-2.1/d6cedeef4ffa702c4e6e836a1768d9ec/material-1.0.0/res/values-land/values-land.xml",

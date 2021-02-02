@@ -43,7 +43,7 @@ import java.util.List;
 
 public class ChooseTheData extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView list_view_item;
-    private SearchView searchView;
+    //    private SearchView searchView;
     ArrayList<String> listOfSearchingData;
     ArrayAdapter<String> adapter;
     FloatingActionButton addItem;
@@ -59,7 +59,7 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_the_data);
-        searchView = (SearchView) findViewById(R.id.searchView);
+//        searchView = (SearchView) findViewById(R.id.searchView);
         list_view_item = (ListView) findViewById(R.id.list_view_item);
         addItem = findViewById(R.id.fab);
         context = this;
@@ -67,52 +67,52 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
         Date date = new Date();
         Log.e("date", date + "");
         listOfSearchingData = new ArrayList<String>();
-        listOfSearchingData.add("rice");
-        listOfSearchingData.add("chilli");
+//        listOfSearchingData.add("rice");
+//        listOfSearchingData.add("chilli");
         listOfSearchingData.add("apple");
         dataBaseHelper = new DataBaseHelper(context);
         adapter();
         adapter.notifyDataSetChanged();
         list_view_item.setAdapter(adapter);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                Log.e("item name", newText);
-
-                if (searchData(newText)) {
-                    adapter.getFilter().filter(newText.toLowerCase());
-                    adapter.notifyDataSetChanged();
-                    list_view_item.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                            try {
-                                String itemName = list.get(position).toString();
-                                Log.e("item name", itemName);
-                                if (itemName.equals("rice")) {
-                                    startActivity(new Intent(context, RiceData.class));
-                                } else {
-                                    startActivity(new Intent(context, Connection.class));
-                                }
-                            } catch (Exception e) {
-
-                            }
-
-                        }
-                    });
-
-                } else {
-                    adapter.getFilter().filter("..,;,;,;,kk;;;kk");// some random string
-                    GlobalClass.showToast("No Data Found");
-                }
-
-                return true;
-            }
-        });
+//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                Log.e("item name", newText);
+//
+//                if (searchData(newText)) {
+//                    adapter.getFilter().filter(newText.toLowerCase());
+//                    adapter.notifyDataSetChanged();
+//                    list_view_item.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                        @Override
+//                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                            try {
+//                                String itemName = list.get(position).toString();
+//                                Log.e("item name", itemName);
+//                                if (itemName.equals("rice")) {
+//                                    startActivity(new Intent(context, RiceData.class));
+//                                } else {
+//                                    startActivity(new Intent(context, Connection.class));
+//                                }
+//                            } catch (Exception e) {
+//
+//                            }
+//
+//                        }
+//                    });
+//
+//                } else {
+//                    adapter.getFilter().filter("..,;,;,;,kk;;;kk");// some random string
+//                    GlobalClass.showToast("No Data Found");
+//                }
+//
+//                return true;
+//            }
+//        });
         list_view_item.setOnItemClickListener(this);
         addItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -148,7 +148,6 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
 
 
     public boolean searchData(String newtext) {
-
         for (String i : listOfSearchingData) {
             Log.e("item in for", i);
             if (i.contains(newtext.toLowerCase())) {
@@ -265,15 +264,10 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
         String itemName = listOfSearchingData.get(position);
         Log.e("position of item", position + "");
         Log.e("position", id + "");
-        if (itemName.equalsIgnoreCase("rice")) {
-            intent = new Intent(ChooseTheData.this, RiceData.class);
-            startActivity(intent);
-        } else if (!itemName.equals("rice")) {
-            intent = new Intent(ChooseTheData.this, Connection.class);
-            intent.putExtra("item", itemName);
-            Log.e("position", listOfSearchingData.get(position));
-            startActivity(intent);
-        }
+        intent = new Intent(ChooseTheData.this, Connection.class);
+        intent.putExtra("item", itemName);
+        Log.e("position", listOfSearchingData.get(position));
+        startActivity(intent);
     }
 
 
