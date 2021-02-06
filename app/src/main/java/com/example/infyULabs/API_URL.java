@@ -1,7 +1,7 @@
 package com.example.infyULabs;
 
 public class API_URL {
-    public static final String url = "http://13.127.205.128:3000/";
+    public static final String url = "http://15.206.149.54:3000/";
     public static final String local_url = "http://192.168.43.55:3000/";
 
     public static final String login = url + "mobile/login";
