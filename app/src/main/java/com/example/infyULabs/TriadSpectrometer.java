@@ -479,7 +479,6 @@ public class TriadSpectrometer extends AppCompatActivity implements View.OnClick
             Log.e("json", jsonObject + "");
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, API_URL.url + url_str, jsonObject,
                     new Response.Listener<JSONObject>() {
-
                         @Override
                         public void onResponse(JSONObject jsonObject) {
                             Log.e("response", jsonObject + "");

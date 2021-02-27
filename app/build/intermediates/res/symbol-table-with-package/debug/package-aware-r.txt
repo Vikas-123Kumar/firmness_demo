@@ -85,6 +85,7 @@ attr alphabeticModifiers
 attr arrowHeadLength
 attr arrowShaftLength
 attr autoCompleteTextViewStyle
+attr autoPlay
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
 attr autoSizePresetSizes
@@ -243,6 +244,8 @@ attr editTextColor
 attr editTextStyle
 attr elevation
 attr emptyVisibility
+attr enableAutomaticInitialization
+attr enableLiveVideoUi
 attr enforceMaterialTheme
 attr enforceTextAppearance
 attr errorEnabled
@@ -277,12 +280,14 @@ attr fontProviderFetchStrategy
 attr fontProviderFetchTimeout
 attr fontProviderPackage
 attr fontProviderQuery
+attr fontSize
 attr fontStyle
 attr fontVariationSettings
 attr fontWeight
 attr foregroundInsidePadding
 attr gapBetweenBars
 attr goIcon
+attr handleNetworkEvents
 attr headerLayout
 attr height
 attr helperText
@@ -464,9 +469,14 @@ attr seriesTitle
 attr seriesType
 attr showAsAction
 attr showDividers
+attr showFullScreenButton
 attr showMotionSpec
+attr showSeekBar
 attr showText
 attr showTitle
+attr showVideoCurrentTime
+attr showVideoDuration
+attr showYouTubeButton
 attr singleChoiceItemLayout
 attr singleLine
 attr singleSelection
@@ -585,6 +595,8 @@ attr trackTint
 attr trackTintMode
 attr ttcIndex
 attr useCompatPadding
+attr useWebUi
+attr videoId
 attr viewInflaterClass
 attr voiceIcon
 attr windowActionBar
@@ -640,6 +652,11 @@ color accent_material_light
 color activity_background
 color answer_option_row_back
 color answer_option_row_back_checked
+color ayp_drop_shadow
+color ayp_item_selected
+color ayp_menu_icons
+color ayp_menu_text
+color ayp_red
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -865,6 +882,11 @@ dimen abc_text_size_title_material_toolbar
 dimen about_content_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen ayp_12sp
+dimen ayp_8dp
+dimen ayp_menu_dialog_container_margin
+dimen ayp_menu_item_padding
+dimen ayp_menu_item_text_size
 dimen bluetooth_spp_padding
 dimen bluetooth_spp_text_size
 dimen card_icons_height
@@ -1124,6 +1146,16 @@ drawable abc_vector_test
 drawable apples_closeup
 drawable avd_hide_password
 drawable avd_show_password
+drawable ayp_background_item_selected
+drawable ayp_drop_shadow_bottom
+drawable ayp_drop_shadow_top
+drawable ayp_ic_fullscreen_24dp
+drawable ayp_ic_fullscreen_exit_24dp
+drawable ayp_ic_menu_24dp
+drawable ayp_ic_pause_36dp
+drawable ayp_ic_play_36dp
+drawable ayp_ic_youtube_24dp
+drawable ayp_shape_rounded_corners
 drawable background_image
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1305,9 +1337,12 @@ id cons
 id container
 id content
 id contentPanel
+id controls_container
 id coordinator
 id custom
 id customPanel
+id custom_action_left_button
+id custom_action_right_button
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1321,6 +1356,8 @@ id direct
 id disableHome
 id doc_image
 id drawer_layout
+id drop_shadow_bottom
+id drop_shadow_top
 id duration_card_view
 id edit_query
 id email
@@ -1332,6 +1369,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id extra_views_container
 id fab
 id fill
 id fill_horizontal
@@ -1341,6 +1379,7 @@ id fixed
 id forever
 id forgot_password
 id fragment
+id fullscreen_button
 id ghost_view
 id gone
 id group_divider
@@ -1375,6 +1414,7 @@ id listMode
 id list_devices
 id list_item
 id list_view_item
+id live_video_indicator
 id ll_continuous
 id ll_logo
 id ll_os
@@ -1383,6 +1423,8 @@ id lv_nanoDevices
 id masked
 id measurement
 id media_actions
+id menu_button
+id menu_root
 id message
 id middle
 id mini
@@ -1420,6 +1462,7 @@ id on
 id one
 id outline
 id packed
+id panel
 id parallax
 id parent
 id parentPanel
@@ -1432,13 +1475,16 @@ id pic_camera
 id pic_gallery
 id piechart
 id pin
+id play_pause_button
 id profile_delete
 id profile_name
 id progresBar
+id progress
 id progress_circular
 id progress_horizontal
 id radio
 id receive_text
+id recycler_view
 id reflectance
 id relative
 id result_text
@@ -1562,6 +1608,7 @@ id username
 id uv_light
 id uv_switch
 id uv_vis
+id video_title
 id view_clear_divider
 id view_freq_divider
 id view_offset_helper
@@ -1574,6 +1621,8 @@ id withText
 id wrap
 id wrap_content
 id www
+id youtube_button
+id youtube_player_seekbar
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1652,6 +1701,10 @@ layout activity_triad_spectrometer
 layout alertdailog
 layout alertitem
 layout app_bar_main
+layout ayp_default_player_ui
+layout ayp_empty_layout
+layout ayp_menu_item
+layout ayp_player_menu
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1709,6 +1762,7 @@ mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+raw ayp_youtube_player
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1742,6 +1796,13 @@ string add_to_report
 string app_name
 string appbar_scrolling_view_behavior
 string aspirin
+string ayp_custom_action_left
+string ayp_custom_action_right
+string ayp_full_screen_button
+string ayp_live
+string ayp_null_time
+string ayp_open_video_in_youtube
+string ayp_play_button
 string bc
 string bellpepper
 string bottom_sheet_behavior
@@ -2414,5 +2475,7 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable YouTubePlayerSeekBar color fontSize
+styleable YouTubePlayerView autoPlay enableAutomaticInitialization enableLiveVideoUi handleNetworkEvents showFullScreenButton showSeekBar showVideoCurrentTime showVideoDuration showYouTubeButton useWebUi videoId
 xml edittextstyle
 xml gradiant_back

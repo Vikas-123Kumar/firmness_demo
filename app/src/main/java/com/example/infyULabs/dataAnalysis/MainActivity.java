@@ -99,35 +99,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static final String AppleUrl = "https://colorsorter.herokuapp.com/api/color";
     RequestQueue rQueue;
     private final UUID PORT_UUID = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");//Serial Port Service ID
-    boolean scanConnected = false;
     String word = "";
     String wordData = "";
     LineData lineData;
     LineDataSet lineDataSet;
     ArrayList lineEntries;
-    private OutputStream outputStream;
-    private InputStream inputStream;
     LineGraphSeries<DataPoint> series;
     int dataNo = 0;
     ScanBeanFromDevice scanBeanFromDevice;
     ArrayList list;
     private ToggleButton btn_os;
-    private ToggleButton btn_continuous;
     BluetoothSocket socket;
     private ListView listViewOFpairdevice;
     Handler handler = new Handler();
     private ArrayAdapter arrayAdapterForList;
     Set<BluetoothDevice> bondedDevices;
-    String string, fruitName, token;
+    String fruitName, token;
     double[] lam1;
-    DataBaseHelper dataBaseHelper;
     private ProgressBar pbar;
     private BluetoothDevice device;
-    Boolean switchForGraph = false;
     boolean stopThread;
-    ArrayList<SliceValue> entriesData;
     MenuItem itemForNavigation;
-    PieChartView pieChartView;
     TextView stringText;
     private BluetoothAdapter BA;
     String dataForChart = "";    //y=valueofscandata```
@@ -156,8 +148,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         BA.startDiscovery();
         this.registerReceiver(mReceiver, filter);
         setup_nav_toolbar();
-
-
 //        hexWatcher = new TextUtil.HexWatcher(stringText);
 //        hexWatcher.enable(hexEnabled);
         setting_action.setOnClickListener(new View.OnClickListener() {
@@ -360,7 +350,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void ScanData() throws IOException {
         //this method is used for making connection to device and get data from device.
 
-        String string = "1";//to give textview.getText().toString(); to send data to arduino
+        String string = "5";//to give textview.getText().toString(); to send data to arduino
         string.concat("\n");
         TextView txtTag = new TextView(this);
         txtTag.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -479,7 +469,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     } else {
                         word += string;
                     }
-                    if (dataNo == 5) {
+                    if (dataNo == 1) {
                         Log.e("word data", "wordData");
                         dataNo = 0;
                         final boolean saveOS = btn_os.isChecked();

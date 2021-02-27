@@ -1,23 +1,30 @@
 package com.example.infyULabs;
 
 import android.Manifest;
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.MediaController;
 import android.widget.SearchView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
@@ -33,13 +40,25 @@ import com.example.infyULabs.loginregister.sqlite.DataBaseHelper;
 import com.example.infyULabs.nir.NirConnection;
 import com.example.infyULabs.userProfile.LoginActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 public class ChooseTheData extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView list_view_item;
@@ -53,7 +72,9 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
     private static final int REQUEST_WRITE_STORAGE = 112;
     Context context;
+    Button shareButton;
     String fruitName;
+    String url = "https://drive.google.com/file/d/1gqpKDwW7bZQ-l2h2X7tG3RdoY6Y4LeFO/view?usp=sharing";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,9 +120,7 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
 //                                    startActivity(new Intent(context, Connection.class));
 //                                }
 //                            } catch (Exception e) {
-//
 //                            }
-//
 //                        }
 //                    });
 //
@@ -146,6 +165,62 @@ public class ChooseTheData extends AppCompatActivity implements AdapterView.OnIt
         setupToolbar();
     }
 
+    File file;
+
+    class RetrivePDFfromUrl extends AsyncTask<String, Void, InputStream> {
+        @Override
+        protected InputStream doInBackground(String... strings) {
+            // we are using inputstream
+            // for getting out PDF.
+            InputStream inputStream = null;
+            try {
+                URL url = new URL(strings[0]);
+                // below is the step where we are
+                // creating our connection.
+                HttpURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
+                if (urlConnection.getResponseCode() == 200) {
+                    // response is success.
+                    // we are getting input stream from url
+                    // and storing it in our variable.
+                    inputStream = new BufferedInputStream(urlConnection.getInputStream());
+                }
+                try {
+                    file = new File(getCacheDir(), "cacheFileAppeal.srl");
+                    try (OutputStream output = new FileOutputStream(file)) {
+                        byte[] buffer = new byte[4 * 1024]; // or other buffer size
+                        int read;
+                        while ((read = inputStream.read(buffer)) != -1) {
+                            output.write(buffer, 0, read);
+                        }
+                        output.flush();
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                } finally {
+
+                }
+                Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Insert Subject here");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, file);
+                startActivity(Intent.createChooser(shareIntent, "Share via"));
+            } catch (IOException e) {
+                // this is the method
+                // to handle errors.
+                e.printStackTrace();
+                return null;
+            }
+            return inputStream;
+        }
+
+        @Override
+        protected void onPostExecute(InputStream inputStream) {
+            // after the execution of our async
+            // task we are loading our pdf in our pdf view.
+        }
+    }
 
     public boolean searchData(String newtext) {
         for (String i : listOfSearchingData) {

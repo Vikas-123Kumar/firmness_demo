@@ -12,19 +12,19 @@ public final class R {
     public static final class dimen {
         private dimen() {}
 
-        public static final int bluetooth_spp_padding = 0x7f070052;
-        public static final int bluetooth_spp_text_size = 0x7f070053;
+        public static final int bluetooth_spp_padding = 0x7f070057;
+        public static final int bluetooth_spp_text_size = 0x7f070058;
     }
     public static final class id {
         private id() {}
 
         public static final int button_scan = 0x7f090057;
-        public static final int list_devices = 0x7f0900b0;
+        public static final int list_devices = 0x7f0900b7;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int device_list = 0x7f0c0043;
-        public static final int device_name = 0x7f0c0046;
+        public static final int device_list = 0x7f0c0047;
+        public static final int device_name = 0x7f0c004a;
     }
 }

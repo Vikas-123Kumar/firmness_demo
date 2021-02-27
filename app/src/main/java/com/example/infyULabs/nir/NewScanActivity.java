@@ -973,24 +973,22 @@ public class NewScanActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Failed to connect", Toast.LENGTH_LONG).show();
                 }
             });
-            jsonObjectRequest.setRetryPolicy(new
+            jsonObjectRequest.setRetryPolicy(new RetryPolicy() {
+                @Override
+                public int getCurrentTimeout() {
+                    return 50000;
+                }
 
-                                                     RetryPolicy() {
-                                                         @Override
-                                                         public int getCurrentTimeout() {
-                                                             return 50000;
-                                                         }
+                @Override
+                public int getCurrentRetryCount() {
+                    return 50000;
+                }
 
-                                                         @Override
-                                                         public int getCurrentRetryCount() {
-                                                             return 50000;
-                                                         }
+                @Override
+                public void retry(VolleyError error) throws VolleyError {
 
-                                                         @Override
-                                                         public void retry(VolleyError error) throws VolleyError {
-
-                                                         }
-                                                     });
+                }
+            });
             rQueue = Volley.newRequestQueue(NewScanActivity.this);
             rQueue.add(jsonObjectRequest);
         } catch (Exception e) {

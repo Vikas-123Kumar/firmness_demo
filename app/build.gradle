@@ -34,7 +34,7 @@ android {
     }
 
     repositories {
-         maven { url "https://jitpack.io" }
+        maven { url "https://jitpack.io" }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -65,9 +65,9 @@ dependencies {
     implementation 'com.google.protobuf:protobuf-java:3.4.0'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'com.akexorcist:bluetoothspp:1.0.0'
-    compile (name: 'nirscannanolibrary', ext:'aar')
+    compile(name: 'nirscannanolibrary', ext: 'aar')
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
-    implementation(name:'ISCSDK-release', ext:'aar')
+    implementation(name: 'ISCSDK-release', ext: 'aar')
 
     compile project(':MPChartLibNIR')
     compile 'com.opencsv:opencsv:3.6'
@@ -75,5 +75,5 @@ dependencies {
     implementation 'org.apache.httpcomponents:httpcore:4.4.10'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.android.volley:volley:1.1.1'
-
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 }

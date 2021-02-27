@@ -7,6 +7,7 @@ INJECTED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/s
 MERGED from [:nirscannanolibrary:] /home/ankit/.gradle/caches/transforms-2/files-2.1/c71d921636be2441d3c326512e4ba9b5/nirscannanolibrary/AndroidManifest.xml:2:1-20:12
 MERGED from [:MPChartLibNIR] /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/MPChartLibNIR/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.material:material:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/d6cedeef4ffa702c4e6e836a1768d9ec/material-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/e0447e42effbef3dcd2e406188edbf8d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ankit/.gradle/caches/transforms-2/files-2.1/b9bd00295fa54a2def5a1666e1b12419/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.jjoe64:graphview:4.2.1] /home/ankit/.gradle/caches/transforms-2/files-2.1/68ba8c6901fa0efdd189b41e9dc44978/jetified-graphview-4.2.1/AndroidManifest.xml:2:1-14:12
@@ -38,17 +39,17 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/ankit
 MERGED from [androidx.core:core:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/2d4ddccafaffb421fd7007b55d21d40f/core-1.1.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/8a7bb1af35291f85764d0bb9525fe6f7/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/e736376e61a510cf5b0d5f169383c1b2/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/b06d1f5381affd5a985ae59fcbbb4a22/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/98ae3a1bd0546dd39518a87cf4c27db1/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/4abdf221fd12ab78715ccf20c9404385/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/3769c36a7bfe97407b8acf9b0e7fe247/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/79c6911079a3fbc54904fc35758aa340/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/a766a66c2821341f452f76ce9b43cd4c/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/b06d1f5381affd5a985ae59fcbbb4a22/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/5f73430f8ae120ced64682bd9f64554d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/01ecdc61cfa783e27ba0d6491bc9b127/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/f4a782f21d6a88b51d8b659ca238bf98/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/21f7a37844c461aa65827aec26892ffe/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/3d87fabdebbe1ef3c5f849b8eb37736d/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/5f73430f8ae120ced64682bd9f64554d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:2:1-117:12
 INJECTED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:2:1-117:12
 INJECTED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:2:1-117:12
@@ -80,10 +81,14 @@ MERGED from [:ISCSDK-release:] /home/ankit/.gradle/caches/transforms-2/files-2.1
 		ADDED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:6:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:12:5-79
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:12:5-79
 	android:name
 		ADDED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.INTERNET
 ADDED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:8:5-67
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:11:5-67
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml:8:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -325,6 +330,8 @@ MERGED from [:MPChartLibNIR] /home/ankit/Desktop/AndroidApplication/new folder/i
 MERGED from [:MPChartLibNIR] /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/MPChartLibNIR/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.android.material:material:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/d6cedeef4ffa702c4e6e836a1768d9ec/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/d6cedeef4ffa702c4e6e836a1768d9ec/material-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] /home/ankit/.gradle/caches/transforms-2/files-2.1/ffa0cc1ea1f7a1387d4cc3d47fac44ac/core-10.0.5/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/e0447e42effbef3dcd2e406188edbf8d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/e0447e42effbef3dcd2e406188edbf8d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ankit/.gradle/caches/transforms-2/files-2.1/b9bd00295fa54a2def5a1666e1b12419/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
@@ -385,6 +392,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/ankit/.gradle/cac
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/8a7bb1af35291f85764d0bb9525fe6f7/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/e736376e61a510cf5b0d5f169383c1b2/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/e736376e61a510cf5b0d5f169383c1b2/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/b06d1f5381affd5a985ae59fcbbb4a22/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/b06d1f5381affd5a985ae59fcbbb4a22/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/98ae3a1bd0546dd39518a87cf4c27db1/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/98ae3a1bd0546dd39518a87cf4c27db1/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/4abdf221fd12ab78715ccf20c9404385/interpolator-1.0.0/AndroidManifest.xml:20:5-44
@@ -395,10 +404,6 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/a
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/79c6911079a3fbc54904fc35758aa340/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/a766a66c2821341f452f76ce9b43cd4c/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/a766a66c2821341f452f76ce9b43cd4c/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/b06d1f5381affd5a985ae59fcbbb4a22/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/b06d1f5381affd5a985ae59fcbbb4a22/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/5f73430f8ae120ced64682bd9f64554d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/5f73430f8ae120ced64682bd9f64554d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/01ecdc61cfa783e27ba0d6491bc9b127/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/01ecdc61cfa783e27ba0d6491bc9b127/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/f4a782f21d6a88b51d8b659ca238bf98/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
@@ -407,6 +412,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ankit/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/21f7a37844c461aa65827aec26892ffe/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/3d87fabdebbe1ef3c5f849b8eb37736d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/3d87fabdebbe1ef3c5f849b8eb37736d/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/5f73430f8ae120ced64682bd9f64554d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ankit/.gradle/caches/transforms-2/files-2.1/5f73430f8ae120ced64682bd9f64554d/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 INJECTED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml
 INJECTED from /home/ankit/Desktop/AndroidApplication/new folder/infyU Labs/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

@@ -24,8 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="2dp"
-                android:padding="7dp"
                 android:gravity="center"
+                android:padding="7dp"
                 android:weightSum="1">
 
                 <ImageView
@@ -40,9 +40,9 @@
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_alignParentRight="true"
-                    android:padding="5dp"
                     android:layout_weight=".2"
-                    android:background="@drawable/small_logo">
+                    android:background="@drawable/small_logo"
+                    android:padding="5dp">
 
                 </ImageView>
             </TableRow>
@@ -54,8 +54,8 @@
         android:id="@+id/one"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/app_bar">
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="20dp">
 
 
         <LinearLayout
@@ -90,17 +90,18 @@
                 android:layout_margin="@dimen/fab_margin"
                 android:src="@drawable/ic_add_circle_black_24dp"
                 app:fabSize="auto" />
+
         </LinearLayout>
 
-<!--        <SearchView-->
-<!--            android:id="@+id/searchView"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:layout_margin="25dp"-->
-<!--            android:background="@drawable/ic_crop_7_5_black_24dp"-->
-<!--            android:iconifiedByDefault="false"-->
-<!--            android:queryHint="Search Here" />-->
+        <!--        <SearchView-->
+        <!--            android:id="@+id/searchView"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_margin="25dp"-->
+        <!--            android:background="@drawable/ic_crop_7_5_black_24dp"-->
+        <!--            android:iconifiedByDefault="false"-->
+        <!--            android:queryHint="Search Here" />-->
     </RelativeLayout>
 
 </RelativeLayout>
